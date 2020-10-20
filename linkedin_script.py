@@ -4,10 +4,10 @@ from time import sleep
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-writer = csv.writer(open('../../output/linkedin_output.csv', 'w+', encoding='utf-8-sig', newline=''))
+writer = csv.writer(open('output/linkedin_output.csv', 'w+', encoding='utf-8-sig', newline=''))
 writer.writerow(['Name', 'Position', 'Company', 'Education', 'Location', 'URL'])
 
-driver = webdriver.Chrome('../../driver/chromedriver')
+driver = webdriver.Chrome('driver/chromedriver')
 driver.get('https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin')
 
 
