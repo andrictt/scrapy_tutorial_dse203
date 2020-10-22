@@ -12,11 +12,11 @@ driver.get('https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-ba
 
 
 username = driver.find_element_by_name("session_key")
-username.send_keys('b5huang@eng.ucsd.edu')
+username.send_keys('XXXXXX')
 sleep(0.5)
 
 password = driver.find_element_by_name('session_password')
-password.send_keys('Cheese2018!')
+password.send_keys('XXXXXXX')
 sleep(0.5)
 
 
