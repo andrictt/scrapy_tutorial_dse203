@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-0a161597335a680ce50",applicationID:"717633112"};/*! For license information please see nr-loader-rum-1220.min.js.LICENSE.txt */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.NRBA=e():t.NRBA=e()}(self,(function(){return function(){var t,e,n={9034:function(t,e,n){"use strict";var r=n(4168);e.Z=(0,r.ky)(16)},5973:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1])},4280:function(t,e,n){"use strict";n.d(e,{H:function(){return o}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var o,i=r.getElementsByTagName("div").length;o=4===i?6:3===i?7:2===i?8:1===i?9:0},5955:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=function(t,e){var n=this;return t&&"object"==typeof t?e&&"object"==typeof e?(Object.assign(this,e),void Object.entries(t).forEach((function(t){var e=t[0],r=t[1];n[e]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(t,e,n){"use strict";n.d(e,{C:function(){return c},L:function(){return u}});var r=n(1424),o=n(5955),i={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(t){if(!t)throw new Error("All info objects require an agent identifier!");if(!a[t])throw new Error("Info for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All info objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"info")}},1476:function(t,e,n){"use strict";n.d(e,{Dg:function(){return c},Mt:function(){return u}});var r=n(1424),o=n(5955),i={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"config")}function u(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");var n=function(t){if(!t)throw new Error("All configuration objects require an agent identifier!");if(!a[t])throw new Error("Configuration for "+t+" was never set");return a[t]}(t);if(n){for(var r=e.split("."),o=0;o<r.length-1;o++)if("object"!=typeof(n=n[r[o]]))return;n=n[r[r.length-1]]}return n}},2085:function(t,e,n){"use strict";n.d(e,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(t,e,n){"use strict";n.d(e,{O:function(){return w},s:function(){return x}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var o=n(4280),i=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(t,e){if(!a)return!1;if(t!==a)return!1;if(!e)return!0;if(!c)return!1;for(var n=c.split("."),r=e.split("."),o=0;o<r.length;o++)if(r[o]!==n[o])return!1;return!0}var d=n(5955),l=n(1424),v=n(4168),p=window.sessionStorage,h="NRBA_SESSION_ID";var g=n(1476),y=window.XMLHttpRequest,m=y&&y.prototype,b={};function w(t){if(!t)throw new Error("All runtime objects require an agent identifier!");if(!b[t])throw new Error("Runtime for "+t+" was never set");return b[t]}function x(t,e){if(!t)throw new Error("All runtime objects require an agent identifier!");var n,a;b[t]=new d.I(e,(n=t,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===o.H?2e3:3e4,offset:(0,i.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,g.Mt)(n,"privacy.cookies_enabled")?(null===(a=p.getItem(h))&&(a=(0,v.ky)(16),p.setItem(h,a)),a):"0",xhrWrappable:y&&m&&m.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(t,b[t],"runtime")}},158:function(t,e,n){"use strict";n.d(e,{q:function(){return r}});var r=["1220","PROD"].filter((function(t){return t})).join(".")},3707:function(t,e,n){"use strict";n.d(e,{w:function(){return o}});var r={agentIdentifier:""},o=function(t){var e=this;if("object"!=typeof t)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(t).forEach((function(t){var n=t[0],o=t[1];Object.keys(r).includes(n)&&(e.sharedContext[n]=o)}))}},1776:function(t,e,n){"use strict";n.d(e,{ee:function(){return r}});var r,o=n(1424),i=n(4217),a=n(357),c="nr@context",u=(0,o.fP)();function s(){}function f(){return new s}function d(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function t(e,n){var o={},u={},l={},v={on:g,addEventListener:g,removeEventListener:y,emit:h,get:b,listeners:m,context:p,buffer:w,abort:d,aborted:!1,isBuffering:x,debugId:n,backlog:e&&e.backlog?e.backlog:{}};return v;function p(t){return t&&t instanceof s?t:t?(0,i.X)(t,c,f):f()}function h(t,n,o,i,a){if(!1!==a&&(a=!0),!r.aborted||i){e&&a&&e.emit(t,n,o);for(var c=p(o),s=m(t),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=O()[u[t]];return l&&l.push([v,t,n,c]),c}}function g(t,e){o[t]=m(t).concat(e)}function y(t,e){var n=o[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return o[t]||[]}function b(e){return l[e]=l[e]||t(v,e)}function w(t,e){var n=O();v.aborted||(0,a.D)(t,(function(t,r){e=e||"feature",u[r]=e,e in n||(n[e]=[])}))}function x(t){return!!O()[u[t]]}function O(){return v.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(t,e,n){"use strict";n.d(e,{E:function(){return r},p:function(){return o}});var r=n(1776).ee.get("handle");function o(t,e,n,o,i){i?(i.buffer([t],o),i.emit(t,e,n)):(r.buffer([t],o),r.emit(t,e,n))}},3350:function(t,e,n){"use strict";n.d(e,{X:function(){return i}});var r=n(7361);i.on=a;var o=i.handlers={};function i(t,e,n,i){a(i||r.E,o,t,e,n)}function a(t,e,n,o,i){i||(i="feature"),t||(t=r.E);var a=e[i]=e[i]||{};(a[n]=a[n]||[]).push([t,o])}},4408:function(t,e,n){"use strict";n.d(e,{m:function(){return i}});var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(t){}function i(t){return r?{passive:!0,capture:!!t}:!!t}},4168:function(t,e,n){"use strict";function r(){var t=null,e=0,n=window.crypto||window.msCrypto;function r(){return t?15&t[e++]:16*Math.random()|0}n&&n.getRandomValues&&(t=n.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)a+="x"===(o=i[c])?r().toString(16):"y"===o?(o=3&r()|8).toString(16):o;return a}function o(t){var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<t;i++)o.push(a().toString(16));return o.join("");function a(){return e?15&e[n++]:16*Math.random()|0}}n.d(e,{Rl:function(){return r},ky:function(){return o}})},6959:function(t,e,n){"use strict";n.d(e,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),o=(new Date).getTime(),i=o;function a(){return r.G&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-i}function c(){return o}function u(t){i=t}function s(){return i}},2364:function(t,e,n){"use strict";n.d(e,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(t,e,n){"use strict";function r(t){var e,n=0;for(e=0;e<t.length;e++)n+=(e+1)*t.charCodeAt(e);return Math.abs(n)}n.d(e,{v:function(){return s},s:function(){return u}});var o=n(6972),i=n(5973),a=n(6959),c=n(2364),u=!0;function s(t){var e=function(){if(i.I&&i.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var t=document.cookie.split(" "),e=0;e<t.length;e++)if(0===t[e].indexOf("NREUM=")){for(var n,o,i,a,c=t[e].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?i=c[u].substring(2):0===c[u].indexOf("p=")?";"===(o=c[u].substring(2)).charAt(o.length-1)&&(o=o.substr(0,o.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==o)}if(a&&i){if((new Date).getTime()-i>6e4)return;return i}}}();e&&((0,o.B)(t,"starttime",e),(0,a.nb)(e))}},6972:function(t,e,n){"use strict";n.d(e,{B:function(){return i},L:function(){return a}});var r=n(6959),o={};function i(t,e,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),o[t]=o[t]||{},o[t][e]=n}function a(t,e,n,r){var i,a,c=t.sharedContext.agentIdentifier,u=null==(i=o[c])?void 0:i[n],s=null==(a=o[c])?void 0:a[r];void 0!==u&&void 0!==s&&t.store("measures",e,{value:s-u})}},7299:function(t,e,n){"use strict";n.d(e,{T:function(){return a}});var r=window,o=r;function i(){return o}var a={isFileProtocol:function(){var t=i(),e=!(!t.location||!t.location.protocol||"file:"!==t.location.protocol);e&&(a.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},847:function(t,e,n){"use strict";n.d(e,{K:function(){return a}});var r=n(1220),o=n(1476),i=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(t){var e={};return i.forEach((function(n){e[n]=function(t,e){return!0!==(0,r.O)(e).disabled&&!1!==(0,o.Mt)(e,t+".enabled")}(n,t)})),e}},5023:function(t,e,n){"use strict";n.d(e,{W:function(){return o}});var r=n(1776),o=function(t,e,n){void 0===n&&(n=[]),this.agentIdentifier=t,this.aggregator=e,this.ee=r.ee.get(t),this.externalFeatures=n}},4217:function(t,e,n){"use strict";n.d(e,{X:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(t){}return t[e]=o,o}},357:function(t,e,n){"use strict";n.d(e,{D:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}},603:function(t,e,n){"use strict";n.d(e,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),o=n(3707),i=n(7299);function a(t,e){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},a(t,e)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(t){var e,n;function r(e){return t.call(this,e)||this}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,a(e,n);var o=r.prototype;return o.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},o.obfuscateString=function(t){if(!t||"string"!=typeof t)return t;for(var e=s(this.sharedContext.agentIdentifier),n=t,r=0;r<e.length;r++){var o=e[r].regex,i=e[r].replacement||"*";n=n.replace(o,i)}return n},r}(o.w);function s(t){var e=[],n=(0,r.Mt)(t,"obfuscate")||[];return e=e.concat(n),i.T.isFileProtocol()&&e.push(c),e}function f(t){for(var e=!1,n=!1,r=0;r<t.length;r++){"regex"in t[r]?"string"!=typeof t[r].regex&&t[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var o=t[r].replacement;o&&"string"!=typeof o&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),e=!0)}return!e&&!n}},1424:function(t,e,n){"use strict";n.d(e,{EZ:function(){return u},Qy:function(){return c},ce:function(){return o},fP:function(){return i},gG:function(){return s},mF:function(){return a}});var r=n(6959),o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function i(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var t=i();if(!t.o){var e=window,n=e.XMLHttpRequest;t.o={ST:setTimeout,SI:e.setImmediate,CT:clearTimeout,XHR:n,REQ:e.Request,EV:e.Event,PR:e.Promise,MO:e.MutationObserver,FETCH:e.fetch}}return t}function c(t,e,n){var o,a,c=i(),u=c.initializedAgents||{},s=u[t]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[t]=Object.assign({},s,((o={})[n]=e,o)),a)),c}function u(t,e){i()[t]=e}function s(){var t,e;return t=i(),e=t.info||{},t.info=Object.assign({beacon:o.beacon,errorBeacon:o.errorBeacon},e),function(){var t=i(),e=t.init||{};t.init=Object.assign({},e)}(),a(),function(){var t=i(),e=t.loader_config||{};t.loader_config=Object.assign({},e)}(),i()}},8539:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}}},r={};function o(t){var e=r[t];if(void 0!==e)return e.exports;var i=r[t]={exports:{}};return n[t](i,i.exports,o),i.exports}o.m=n,o.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return o.d(e,{a:e}),e},o.d=function(t,e){for(var n in e)o.o(e,n)&&!o.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},o.f={},o.e=function(t){return Promise.all(Object.keys(o.f).reduce((function(e,n){return o.f[n](t,e),e}),[]))},o.u=function(t){return t+"."+o.h().slice(0,8)+"-1220.js"},o.h=function(){return"2d6a2503b7f18a5b77dd"},o.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},t={},e="NRBA:",o.l=function(n,r,i,a){if(t[n])t[n].push(r);else{var c,u;if(void 0!==i)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==e+i){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,o.nc&&c.setAttribute("nonce",o.nc),c.setAttribute("data-webpack",e+i),c.src=n),t[n]=[r];var l=function(e,r){c.onerror=c.onload=null,clearTimeout(v);var o=t[n];if(delete t[n],c.parentNode&&c.parentNode.removeChild(c),o&&o.forEach((function(t){return t(r)})),e)return e(r)},v=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},o.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},o.p="https://js-agent.newrelic.com/",function(){var t={299:0,82:0};o.f.j=function(e,n){var r=o.o(t,e)?t[e]:void 0;if(0!==r)if(r)n.push(r[2]);else{var i=new Promise((function(n,o){r=t[e]=[n,o]}));n.push(r[2]=i);var a=o.p+o.u(e),c=new Error;o.l(a,(function(n){if(o.o(t,e)&&(0!==(r=t[e])&&(t[e]=void 0),r)){var i=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+e+" failed.\n("+i+": "+a+")",c.name="ChunkLoadError",c.type=i,c.request=a,r[1](c)}}),"chunk-"+e,e)}};var e=function(e,n){var r,i,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(e){return 0!==t[e]}))){for(r in c)o.o(c,r)&&(o.m[r]=c[r]);if(u)u(o)}for(e&&e(n);s<a.length;s++)i=a[s],o.o(t,i)&&t[i]&&t[i][0](),t[i]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(e.bind(null,0)),n.push=e.bind(null,n.push.bind(n))}();var i={};return function(){"use strict";o.r(i);var t=o(9034),e=o(4408),n=window,r=n.document;function a(t){"complete"===r.readyState&&t()}function c(t){a(t),r.addEventListener?n.addEventListener("load",t,(0,e.m)(!1)):n.attachEvent("onload",t)}function u(t){a(t),r.addEventListener?r.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):r.attachEvent("onreadystatechange",a)}var s=o(1776);function f(){f=function(){return t};var t={},e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},o=r.iterator||"@@iterator",i=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var o=e&&e.prototype instanceof l?e:l,i=Object.create(o.prototype),a=new j(r||[]);return i._invoke=function(t,e,n){var r="suspendedStart";return function(o,i){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===o)throw i;return P()}for(n.method=o,n.arg=i;;){var a=n.delegate;if(a){var c=x(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),i}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var d={};function l(){}function v(){}function p(){}var h={};c(h,o,(function(){return this}));var g=Object.getPrototypeOf,y=g&&g(g(_([])));y&&y!==e&&n.call(y,o)&&(h=y);var m=p.prototype=l.prototype=Object.create(h);function b(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function r(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var f=u.arg,d=f.value;return d&&"object"==typeof d&&n.call(d,"__await")?e.resolve(d.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(d).then((function(t){f.value=t,a(f)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,n){function i(){return new e((function(e,o){r(t,n,e,o)}))}return o=o?o.then(i,i):i()}}function x(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return d;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,d;var o=r.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,d):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,d)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function _(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,i=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:P}}function P(){return{value:void 0,done:!0}}return v.prototype=p,c(m,"constructor",p),c(p,"constructor",v),v.displayName=c(p,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===v||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,p):(t.__proto__=p,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},b(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,n,r,o,i){void 0===i&&(i=Promise);var a=new w(u(e,n,r,o),i);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=_,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return r("end");if(i.tryLoc<=this.prev){var c=n.call(i,"catchLoc"),u=n.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return r(i.catchLoc,!0);if(this.prev<i.finallyLoc)return r(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return r(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return r(i.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,d):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),d},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;E(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:_(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},t}function d(t,e,n,r,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,o)}var l=0;function v(t){var e;(e=f().mark((function e(){var n,r;return f().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!l++){e.next=2;break}return e.abrupt("return");case 2:return e.prev=2,e.next=5,o.e(552).then(o.bind(o,5552));case 5:return n=e.sent,r=n.aggregator,e.next=9,r(t);case 9:e.next=15;break;case 11:e.prev=11,e.t0=e.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",e.t0),s.ee.abort();case 15:case"end":return e.stop()}}),e,null,[[2,11]])})),function(){var t=this,n=arguments;return new Promise((function(r,o){var i=e.apply(t,n);function a(t){d(i,r,o,a,c,"next",t)}function c(t){d(i,r,o,a,c,"throw",t)}a(void 0)}))})()}var p=o(8539),h=o.n(p),g=o(1424),y=o(1220),m=o(441),b=o(7361),w=o(357),x=o(6959);var O=o(1476),E=o(5955),j={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},_={};var P=!1;var A=o(6972),k=o(1793),L=o(5023);function S(t,e){return S=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},S(t,e)}var T,C,I,R=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,k.v)(e),(0,A.B)(e,"firstbyte",(0,x.yf)()),c((function(){return n.measureWindowLoaded()})),u((function(){return n.measureDomContentLoaded()})),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,S(e,n);var o=r.prototype;return o.measureWindowLoaded=function(){var t=(0,x.zO)();(0,A.B)(this.agentIdentifier,"onload",t+(0,x.os)()),(0,b.p)("timing",["load",t],void 0,void 0,this.ee)},o.measureDomContentLoaded=function(){(0,A.B)(this.agentIdentifier,"domContent",(0,x.zO)()+(0,x.os)())},r}(L.W);void 0!==document.hidden?(T="hidden",C="visibilitychange",I="visibilityState"):void 0!==document.msHidden?(T="msHidden",C="msvisibilitychange"):void 0!==document.webkitHidden&&(T="webkitHidden",C="webkitvisibilitychange",I="webkitVisibilityState");var M=o(2085);function N(t,e){return N=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},N(t,e)}var D=function(t){var n,r;function o(n){var r,o;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var t;return(t=r).perfObserver.apply(t,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(t){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).lcpObserver.apply(t,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(t){}r.clsPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).clsObserver.apply(t,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(t){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var t;return(t=r).captureInteraction.apply(t,arguments)}),(0,e.m)(!1))}))}return o=function(){var t;return(t=r).captureVisibilityChange.apply(t,arguments)},"addEventListener"in document&&C&&document.addEventListener(C,(function(){I&&document[I]?o(document[I]):document[T]?o("hidden"):o("visible")}),(0,e.m)(!1)),r}r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,N(n,r);var i=o.prototype;return i.isEnabled=function(){return!1!==(0,O.Mt)(this.agentIdentifier,"page_view_timing.enabled")},i.perfObserver=function(t,e){var n=this;t.getEntries().forEach((function(t){"first-paint"===t.name?(0,b.p)("timing",["fp",Math.floor(t.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===t.name&&(0,b.p)("timing",["fcp",Math.floor(t.startTime)],void 0,void 0,n.ee)}))},i.lcpObserver=function(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var o=[r],i=this.addConnectionAttributes({});i&&o.push(i),(0,b.p)("lcp",o,void 0,void 0,this.ee)}},i.clsObserver=function(t){var e=this;t.getEntries().forEach((function(t){t.hadRecentInput||(0,b.p)("cls",[t],void 0,void 0,e.ee)}))},i.addConnectionAttributes=function(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t},i.captureInteraction=function(t){if(t instanceof M.Y.EV&&!this.fiRecorded){var e=Math.round(t.timeStamp),n={type:t.type};this.addConnectionAttributes(n),e<=(0,x.zO)()?n.fid=(0,x.zO)()-e:e>(0,x.os)()&&e<=Date.now()?(e-=(0,x.os)(),n.fid=(0,x.zO)()-e):e=(0,x.zO)(),this.fiRecorded=!0,(0,b.p)("timing",["fi",e,n],void 0,void 0,this.ee)}},i.captureVisibilityChange=function(t){"hidden"===t&&(this.pageHiddenTime=(0,x.zO)(),(0,b.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},o}(L.W),q=o(3350),B="React",z="Angular",G="AngularJS",H="Backbone",F="Ember",V="Vue",Z="Meteor",U="Zepto",X="Jquery";function Q(){var t=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var t=document.querySelectorAll("body > div"),e=0;e<t.length;e++)if(Object.keys(t[e]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(t){return!1}})()&&t.push(B),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(t){return!1}}()&&t.push(G),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(t){return!1}}()&&t.push(z),window.Backbone&&t.push(H),window.Ember&&t.push(F),window.Vue&&t.push(V),window.Meteor&&t.push(Z),window.Zepto&&t.push(U),window.jQuery&&t.push(X)}catch(t){}return t}var W=o(7299),K=o(603),Y=o(158);function J(t,e){return J=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},J(t,e)}var $=function(t){var e,n;function r(e){var n;return(n=t.call(this,e)||this).singleChecks(),(0,q.X)("record-supportability",(function(){var t;return(t=n).recordSupportability.apply(t,arguments)}),void 0,n.ee),(0,q.X)("record-custom",(function(){var t;return(t=n).recordCustom.apply(t,arguments)}),void 0,n.ee),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,J(e,n);var o=r.prototype;return o.recordSupportability=function(t,e){var n=["sm",t,{name:t},e];return(0,b.p)("storeMetric",n,null,void 0,this.ee),n},o.recordCustom=function(t,e){var n=["cm",t,{name:t},e];return(0,b.p)("storeEventMetrics",n,null,void 0,this.ee),n},o.singleChecks=function(){var t=this;this.recordSupportability("Generic/Version/"+Y.q+"/Detected"),u((function(){Q().forEach((function(e){t.recordSupportability("Framework/"+e+"/Detected")}))})),W.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),W.T.supportabilityMetricSent=!0);var e=(0,K.$c)(this.agentIdentifier);e.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),e.length>0&&!(0,K.Ng)(e)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(L.W),tt=o(847);new Promise((function(e,n){if(P)e(P);else{var r=(0,g.gG)();try{(0,m.L)(t.Z,r.info),(0,O.Dg)(t.Z,r.init),function(t,e){if(!t)throw new Error("All loader-config objects require an agent identifier!");_[t]=new E.I(e,j),(0,g.Qy)(t,_[t],"loader_config")}(t.Z,r.loader_config),(0,y.s)(t.Z,{}),function(t){var e=(0,g.fP)(),n=s.ee.get(t),r=n.get("tracer"),o="api-",i="api-ixn-";function a(){}(0,w.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(t,n){e[n]=u(o,n,!0,"api")})),e.addPageAction=u(o,"addPageAction",!0),e.setCurrentRouteName=u(o,"routeName",!0),e.setPageViewName=function(e,n){if("string"==typeof e)return"/"!==e.charAt(0)&&(e="/"+e),(0,y.O)(t).customTransaction=(n||"http://custom.transaction")+e,u(o,"setPageViewName",!0,"api")()},e.setCustomAttribute=function(e,n){var r,i=(0,m.C)(t);return(0,m.L)(t,Object.assign({},i,{jsAttributes:Object.assign({},i.jsAttributes,(r={},r[e]=n,r))})),u(o,"setCustomAttribute",!0,"api")()},e.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(t,e){var o={},i=this,a="function"==typeof e;return(0,b.p)("api-ixn-tracer",[(0,x.zO)(),t,o],i,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,x.zO)(),i,a],o),a)try{return e.apply(this,arguments)}catch(t){throw r.emit("fn-err",[arguments,this,"string"==typeof t?new Error(t):t],o),t}finally{r.emit("fn-end",[(0,x.zO)()],o)}}}};function u(t,e,r,o){return function(){return(0,b.p)("record-supportability",["API/"+e+"/called"],void 0,void 0,n),(0,b.p)(t+e,[(0,x.zO)()].concat(h()(arguments)),r?null:this,o,n),r?void 0:this}}(0,w.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(t,e){c[e]=u(i,e)})),e.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),(0,b.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,b.p)("err",[t,(0,x.zO)(),!1,e],void 0,void 0,n)}}(t.Z),e(P=!0)}catch(t){n(t)}}})).then((function(){var e,n,r,o=(0,tt.K)(t.Z);o.page_view_event&&new R(t.Z),o.page_view_timing&&new D(t.Z),o.metrics&&new $(t.Z),e="lite",n?setTimeout((function(){return v(e)}),r||1e3):c((function(){return v(e)}))}))}(),i}()}));</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href=" https://endpts.com/wp-content/themes/endpoints-rakia/assets/css/bootstrap/bootstrap-grid-modal.min.css?ver=4.6.2" type="text/css"/>
+    <link rel="stylesheet" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/css/style.min.css?ver=1610241983" type="text/css"/>
+    <link rel="stylesheet" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/css/fonts.min.css?ver=1610241983" type="text/css"/>
+    <link rel="pingback" href="https://endpts.com/xmlrpc.php">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/apple-touch-icon.png?v=OmJxx0N8zQ">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/favicon-32x32.png?v=OmJxx0N8zQ">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/favicon-16x16.png?v=OmJxx0N8zQ">
+    <link rel="manifest" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/site.webmanifest?v=OmJxx0N8zQ">
+    <link rel="mask-icon" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/safari-pinned-tab.svg?v=OmJxx0N8zQ" color="#494949">
+    <link rel="shortcut icon" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/favicon.ico?v=OmJxx0N8zQ">
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/IvarText_Regular.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/IvarText_Bold.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/IvarText_Italic.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/IvarHeadline_SemiBold.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/Concourse_T4_Bold.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/Concourse_T4_Italic.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/Concourse_C4_Bold.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/Concourse_C4_Regular.woff2" as="font" crossorigin="anonymous"/>
+    <meta name="msapplication-TileColor" content="#bb9451">
+    <meta name="msapplication-config" content="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/browserconfig.xml?v=OmJxx0N8zQ">
+    <meta name="theme-color" content="#ffffff">
+    <title>As a new study spotlights a growing role for LRRK2 in Parkinson’s, Denali clears an early trial hurdle &#8211; Endpoints News</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//cdn.parsely.com' />
+<link rel='dns-prefetch' href='//www.googletagservices.com' />
+<link rel="alternate" type="application/rss+xml" title="Endpoints News &raquo; Feed" href="https://endpts.com/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/endpts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='classic-theme-styles-css' href='https://endpts.com/wp-includes/css/classic-themes.min.css?ver=1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='EP_css-css' href='https://endpts.com/wp-content/plugins/endpoints/assets/css/endpoints.min.css?ver=1403438354' media='all' />
+<link rel="https://api.w.org/" href="https://endpts.com/wp-json/" /><link rel="alternate" type="application/json" href="https://endpts.com/wp-json/wp/v2/posts/159015" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://endpts.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://endpts.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel="canonical" href="https://endpts.com/as-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle/" />
+<link rel='shortlink' href='https://endpts.com/?p=159015' />
+<link rel="alternate" type="application/json+oembed" href="https://endpts.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fendpts.com%2Fas-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://endpts.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fendpts.com%2Fas-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle%2F&#038;format=xml" />
+<meta property="og:image" content="https://endpts.com/wp-content/uploads/2018/03/ryan-watts-denali-social-credit-utah.jpg" /><meta property="twitter:image" content="https://endpts.com/wp-content/uploads/2018/03/ryan-watts-denali-social-credit-utah.jpg" /><meta property="og:description" content="Hard on the heels of new research that points to a much wider role for LRRK2 in Parkinson’s disease than had earlier been believed, investigators at Denali say they were able to nail down some hard — though still very early — clinical data to back up their lead effort" /><meta property="og:title" content="As a new study spotlights a growing role for LRRK2 in Parkinson’s, Denali clears an early trial hurdle" /><meta property="og:url" content="https://endpts.com/as-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle/" /><meta property="og:site_name" content="Endpoints News" /><meta property="og:type" content="article" /><meta property="article:section" content="Business & Health" /><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@endpts"><meta name="googlebot" content="noarchive"><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"NewsArticle","headline":"As a new study spotlights a growing role for LRRK2 in Parkinson\u2019s, Denali clears an early trial hurdle","image":"https:\/\/endpts.com\/wp-content\/uploads\/2018\/03\/ryan-watts-denali-social-credit-utah.jpg","url":"https:\/\/endpts.com\/as-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle\/","copyrightYear":"2018","keywords":["R&amp;D"],"datePublished":"2018-08-02T12:44:50+00:00","dateModified":"","author":[{"name":"John Carroll","jobTitle":"Editor & Founder","url":"https:\/\/endpts.com\/author\/john-carroll\/","@type":"Person","image":"https:\/\/endpts.com\/wp-content\/uploads\/2019\/05\/authors-john.jpg"}],"publisher":{"@type":"Organization","name":"Endpoints News","url":"https:\/\/endpts.com","sameAs":["https:\/\/twitter.com\/endpts","https:\/\/www.linkedin.com\/company\/endpoints\/","https:\/\/facebook.com\/endpoints"],"logo":{"@type":"imageObject","url":"https:\/\/endpts.com\/wp-content\/themes\/endpoints-rakia\/assets\/images\/endpoints_news.png"},"foundingDate":"2016-06-20"},"copyrightHolder":{"@type":"Organization","name":"Endpoints News","url":"https:\/\/endpts.com","sameAs":["https:\/\/twitter.com\/endpts","https:\/\/www.linkedin.com\/company\/endpoints\/","https:\/\/facebook.com\/endpoints"],"logo":{"@type":"imageObject","url":"https:\/\/endpts.com\/wp-content\/themes\/endpoints-rakia\/assets\/images\/endpoints_news.png"},"foundingDate":"2016-06-20"},"mainEntityOfPage":"https:\/\/endpts.com\/as-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle\/","articleSection":["R&amp;D"],"articleBody":"Hard on the heels of new research that points to a much wider role for LRRK2 in Parkinson\u2019s disease than had earlier been believed, investigators at Denali say they were able to nail down some hard \u2014 though still very early \u2014 clinical data to back up their lead effort in the field.\nThe biotech, run by a crew of ex-Genentech researchers out to blaze some new trails in the disaster-prone neurodegeneration field, has focused heavily on the genetic triggers believed to play a role in Parkinson\u2019s and Alzheimer\u2019s. In a Phase I study, they outlined evidence that DNL201, a small molecule inhibitor of leucine-rich repeat kinase 2, hit the biomarkers they were aiming at as they zero in on the ideal dose for more advanced human studies. And that builds on earlier work demonstrating their drug\u2019s ability to tamp down on the protein in healthy volunteers.\n\u201cWe conclude from this clinical trial that DNL201 was able to achieve the targeted level of LRRK2 inhibition at doses that were safe and well tolerated,\u201d said Carole Ho, the chief medical officer, in a statement.\nThat was good enough for a 7% pop on the stock price $DNLI in pre-market trading Thursday.\nDenali didn\u2019t ignore the recent work highlighting LRRK2\u2019s expanding role as a likely culprit for Parkinson\u2019s. CEO Ryan Watt highlighted \u201cmounting evidence supporting a role of LRRK2 inhibition in the broader sporadic Parkinson\u2019s disease population, in addition to Parkinson\u2019s disease genetically associated with a LRRK2\u00a0mutation.\u201d\nDr. J. Timothy Greenamyre, chief of the Movement Disorders Division at the University of Pittsburgh Medical Center in Pennsylvania published a study just days ago asserting that a variety of triggers set LRRK2 on a destructive course in Parkinson\u2019s patients.\n\u201cThis discovery is extremely consequential for Parkinson&#8217;s disease because it suggests that therapies currently being developed for a small group of patients may benefit everybody with the disease,\u201d he said.\nYou can be sure that news made the rounds at Denali, and everywhere else in the Parkinson\u2019s community, which accounts for millions of patients worldwide.\n"}</script>    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QWNX9N9E5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag()
+        {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('set', 'user_properties', {
+          user_type: 'Guest',
+        });
+        gtag('config', 'G-9QWNX9N9E5');
+        _linkedin_partner_id = "2273916";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+                (function (w, d, s, l, i)
+        {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=jln1n8tT5GwrRWy9brO0TQ&gtm_preview=env-1&gtm_cookies_win=x';
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KC2PBM2');
+            </script>
+</head>
+<body class="post-template-default single single-post postid-159015">
+<header class="epn_header_menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-2">
+                <a href="/" class="epn_logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 288 22" style="enable-background:new 0 0 288 22;" xml:space="preserve">
+<g>
+    <path class="epn_svg_logo" d="M14.69,5.23H5.34v3.64h7.43v4.24H5.34v3.65h9.65v4.6H0V0.63h14.69V5.23z"></path>
+    <path class="epn_svg_logo" d="M35.21,12.38h0.21V0.63h5.34v20.73h-3.41L26.18,9.58h-0.21v11.78h-5.34V0.63h3.41L35.21,12.38z"></path>
+    <path class="epn_svg_logo" d="M46.8,21.37V0.63h7.35c6.12,0,10.92,4.15,10.92,10.39c0,6.61-4.56,10.35-10.88,10.35H46.8z M54.56,16.77
+		c2.91,0,5.05-2.14,5.05-5.83c0-3.57-2.79-5.71-5.09-5.71h-2.38v11.54H54.56z"></path>
+    <path class="epn_svg_logo" d="M77.45,14.26h-2.13v7.1h-5.34V0.63h7.63c4.72,0,8.04,2.71,8.04,7.18C85.66,10.61,83.65,14.26,77.45,14.26z
+		 M77.04,5.03h-1.72v5.13h1.85c1.64,0,2.79-0.86,2.79-2.46C79.95,6.22,78.84,5.03,77.04,5.03z"></path>
+    <path class="epn_svg_logo" d="M100.25,21.78c-6.49,0-11.12-4.68-11.12-10.67c0-6.61,5.34-10.88,11.12-10.88c5.66,0,11.04,4.15,11.04,10.88
+		C111.29,16.93,106.94,21.78,100.25,21.78z M100.21,4.9c-2.83,0-5.58,2.22-5.58,6.12c0,3.16,1.93,6.08,5.71,6.08
+		c3.04,0,5.5-2.26,5.5-6.08C105.83,7.37,103.25,4.9,100.21,4.9z"></path>
+    <path class="epn_svg_logo" d="M121.84,21.37h-5.34V0.63h5.34V21.37z"></path>
+    <path class="epn_svg_logo" d="M142.56,12.38h0.21V0.63h5.34v20.73h-3.41L133.53,9.58h-0.21v11.78h-5.34V0.63h3.41L142.56,12.38z"></path>
+    <path class="epn_svg_logo" d="M163.91,5.23v16.13h-5.34V5.23h-6.24v-4.6h17.81v4.6H163.91z"></path>
+    <path class="epn_svg_logo" d="M174.98,15.09c1.81,1.15,4.23,2.18,6.61,2.18c1.93,0,2.71-0.86,2.71-1.68c0-1.23-1.36-1.72-4.02-2.96
+		c-4.19-1.97-5.95-3.49-5.95-6.45s2.5-5.95,7.63-5.95c2.87,0,5.42,0.78,7.31,1.97l-1.23,4.27c-2.09-1.11-4.1-1.72-6.03-1.72
+		c-1.56,0-2.26,0.66-2.26,1.44c0,0.86,0.86,1.36,4.06,2.83c4.52,2.09,6.03,3.98,6.03,6.82c0,3.9-3.53,5.95-8.5,5.95
+		c-3.57,0-6.61-1.23-7.84-2.38L174.98,15.09z"></path>
+    <path class="epn_svg_text" d="M214.24,18.33l0.12-0.08V0.84h1.64v20.53l-0.94,0.21L200.04,3.92l-0.12,0.04v17.41h-1.64V0.84l0.94-0.21
+		L214.24,18.33z"></path>
+    <path class="epn_svg_text" d="M236.72,2.32h-11.45v7.84h10.22v1.48h-10.22v8.25h11.86v1.48h-13.5V0.84h13.09V2.32z"></path>
+    <path class="st0" d="M255.6,4.99l-5.66,16.59h-0.41l-7.96-20.32l1.6-0.62l6.44,16.91h0.21l5.62-16.91h0.41l5.87,16.91h0.21
+		l6.16-16.91l1.64,0.62l-7.84,20.32h-0.41l-5.71-16.59H255.6z"></path>
+    <path class="epn_svg_text" d="M274.13,17.84c1.56,1.4,3.94,2.42,6.69,2.42c3.94,0,5.46-1.85,5.46-3.86c0-2.14-1.72-3.53-5.38-4.97
+		c-4.93-1.89-6.69-3.33-6.69-5.95c0-2.5,2.18-5.05,6.36-5.05c2.87,0,5.58,1.35,6.98,2.67l-0.94,1.23c-1.72-1.4-3.53-2.38-6.03-2.38
+		c-3.08,0-4.64,1.6-4.64,3.41c0,1.93,1.15,2.87,5.62,4.64c4.76,1.89,6.44,3.78,6.44,6.36c0,2.92-2.18,5.42-7.22,5.42
+		c-3.32,0-6.36-1.31-7.59-2.63L274.13,17.84z"></path>
+</g>
+</svg>
+                </a>
+            </div>
+            <div class="col-2 d-md-none">
+                <a href="#" class="epn_hamburger"><span></span><span></span><span></span></a>
+            </div>
+            <nav class="col-8 col-md epn_menu_container">
+                <div class="epn_menu">
+    <ul>
+        <li class="menu-item-has-children">
+            <span>Channels</span>
+            <ul>
+                <li>
+                    <a href="/news/" title="See latest news">All News</a>
+                </li>
+                <li>
+                    <a href="/premium" title="Premium Content">Premium Content</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/in-focus/" title="See Latest Stories in In Focus">In Focus</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/special/" title="See Latest Stories in Special Channel">Special</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/ai/" title="See Latest Stories in AI Channel">AI</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/bioregnum/" title="See Latest Stories in Bioregnum Channel">Bioregnum</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/biotech-voices/" title="See Latest Stories in Biotech Voices Channel">Biotech Voices</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/cell-gene-tx/" title="See Latest Stories in Cell/Gene Tx Channel">Cell/Gene Tx</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/china/" title="See Latest Stories in China Channel">China</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/coronavirus/" title="See Latest Stories in Coronavirus Channel">Coronavirus</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/deals/" title="See Latest Stories in Deals Channel">Deals</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/diagnostics/" title="See Latest Stories in Diagnostics Channel">Diagnostics</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/discovery/" title="See Latest Stories in Discovery Channel">Discovery</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/fda-plus/" title="See Latest Stories in FDA+ Channel">FDA+</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/financing/" title="See Latest Stories in Financing Channel">Financing</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/law/" title="See Latest Stories in Law Channel">Law</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/letters-to-the-editor/" title="See Latest Stories in Letters to the Editor Channel">Letters to the Editor</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/manufacturing/" title="See Latest Stories in Manufacturing Channel">Manufacturing</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/marketing/" title="See Latest Stories in Marketing Channel">Marketing</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/opinion/" title="See Latest Stories in Opinion Channel">Opinion</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/outsourcing/" title="See Latest Stories in Outsourcing Channel">Outsourcing</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/peer-review/" title="See Latest Stories in Peer Review Channel">Peer Review</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/people/" title="See Latest Stories in People Channel">People</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/pharma/" title="See Latest Stories in Pharma Channel">Pharma</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/rd/" title="See Latest Stories in R&amp;D Channel">R&amp;D</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/startups/" title="See Latest Stories in Startups Channel">Startups</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/weekly/" title="See Latest Stories in Weekly Channel">Weekly</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://webinars.endpts.com" title="Endpoints Webinars" target="_blank">Webinars</a>
+        </li>
+        <li>
+            <a href="https://careers.endpts.com" title="Endpoints Careers" target="_blank">Biopharma Jobs</a>
+        </li>
+        <li class="menu-item-has-children">
+            <span>More</span>
+            <ul>
+                <li><a href="http://endpoints-news.rippling-ats.com/" rel="nofollow noopener" target="_blank" title="Work at Endpoints">Work at Endpoints</a></li>
+                <li><a href="https://endpts.com/letter-to-editors/" target="_blank" title="Letter to Editors">Letter to Editors</a></li>
+                <li><a href="https://endpts.com/ipo-tracker/" target="_blank" title="Endpoints News IPO Tracker">IPO Tracker</a></li>
+                <li><a href="https://webinars.endpts.com/" target="_blank" title="Endpoints Webinars">Webinars</a></li>
+                <li><a href="https://endpoints.studio/events/" title="Endpoints Events" target="_blank">Events</a></li>
+                <li><a href="https://endpts.com/sponsored/" title="See all Sponsored Posts">Sponsored Posts</a></li>
+                <li><a href="https://endpoints.studio" target="_blank" title="Endpoints Studio">Advertise</a></li>
+                <li><a href="https://www.iubenda.com/privacy-policy/286978" rel="nofollow noopener" target="_blank">Privacy Policy</a></li>
+                <li><a href="https://store.endpts.com" target="_blank">Endpoints Merch</a></li>
+                <li><a href="https://endpts.com/about-endpoints-news/" title="About Endpoints News">About Us</a></li>
+                <li><span data-intercom-open >Help</span></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="epn_search_bar">
+        <form action="https://endpts.com/">
+            <input type="text" name="s" placeholder="Search">
+            <button class="epn_ux_button epn_white epn_search_submit_button"></button>
+        </form>
+        <button class="epn_ux_button epn_white epn_search_button"></button>
+    </div>
+</div>
+
+            </nav>
+            <div class="col-8 col-md-2 epn_profile">
+    <div class="epn_user epn_logged_out">
+        <ul>
+            <li><a href="https://endpts.com/subscribe/" class="epn_navigation_sign_up_button" title="Subscribe to Endpoints News">SIGN UP</a></li>
+            <li>
+                <button data-toggle="modal" class="epn_navigation_log_in_button" data-target="#epn_sign_in_modal">LOG IN</button>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</header><div class="epn_body_bg epn_ad_after_header_wrapper"><section class="epn_ad_wrapper epn_regular_section epn_ads_full_width"><div class="container"><div class="row"><div class="col-8"><div id="rakia_above_articles" data-slot="/21729248569/rakia_banner_above_articles"></div></div></div></div></section></div><section class="sidebar_limit"></section>
+<section class="epn_article_body epn_regular_section infinite-scroll epn_body_next_to_sidebar">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-6 epn_is_stream">
+                <article class="epn_regular_section epn_white_box " data-aid="Nul5f0fj">
+    
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/as-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/as-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle/&title=As%20a%20new%20study%20spotlights%20a%20growing%20role%20for%20LRRK2%20in%20Parkinson%E2%80%99s%2C%20Denali%20clears%20an%20early%20trial%20hurdle&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=As%20a%20new%20study%20spotlights%20a%20growing%20role%20for%20LRRK2%20in%20Parkinson%E2%80%99s%2C%20Denali%20clears%20an%20early%20trial%20hurdle - https://endpts.com/as-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">August 2, 2018 08:44 AM EDT</div>
+    <div class="epn_channel channel-rd"><a href="https://endpts.com/channel/rd/" title="Channel: R&amp;D"><span>R&amp;D</span></a></div>
+</div>
+        
+        <h1>As a new study spot&shy;lights a grow&shy;ing role for LRRK2 in Parkin&shy;son’s, De&shy;nali clears an ear&shy;ly tri&shy;al hur&shy;dle</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2019/05/authors-john.jpg');"></div>
+    <div class="epn_text">
+        <h3>John Carroll</h3>
+        <h4>Editor & Founder</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Hard on the heels of new re&shy;search that points to a much wider role for LRRK2 in Parkin&shy;son&rsquo;s dis&shy;ease than had ear&shy;li&shy;er been be&shy;lieved, in&shy;ves&shy;ti&shy;ga&shy;tors at De&shy;nali say they were able to nail down some hard &mdash; though still very ear&shy;ly &mdash; clin&shy;i&shy;cal da&shy;ta to back up their lead ef&shy;fort in the field.</p>
+<p>The biotech, run by a crew of ex-Genen&shy;tech re&shy;searchers out to blaze some new trails in the dis&shy;as&shy;ter-prone neu&shy;rode&shy;gen&shy;er&shy;a&shy;tion field, has fo&shy;cused heav&shy;i&shy;ly on the ge&shy;net&shy;ic trig&shy;gers be&shy;lieved to play a role in Parkin&shy;son&rsquo;s and Alzheimer&rsquo;s. In a Phase I study, they out&shy;lined <a href="https://www.eurekalert.org/pub_releases/2018-07/nion-pab072018.php">ev&shy;i&shy;dence that DNL201</a>, a small mol&shy;e&shy;cule in&shy;hibitor of leucine-rich re&shy;peat ki&shy;nase 2, hit the bio&shy;mark&shy;ers they were aim&shy;ing at as they ze&shy;ro in on the ide&shy;al dose for more ad&shy;vanced hu&shy;man stud&shy;ies. And that builds on ear&shy;li&shy;er work demon&shy;strat&shy;ing their drug&rsquo;s abil&shy;i&shy;ty to tamp down on the pro&shy;tein in healthy vol&shy;un&shy;teers.</p>
+<div class="epn_image epn_image_aside epn_image_aside_align_right"><img decoding="async" src="https://endpts.com/wp-content/uploads/2018/08/Caroline-HO-e1533213761577.png"><span>Ca&shy;r&shy;ole Ho</span></div>
+<p>&ldquo;We con&shy;clude from this clin&shy;i&shy;cal tri&shy;al that DNL201 was able to achieve the tar&shy;get&shy;ed lev&shy;el of LRRK2 in&shy;hi&shy;bi&shy;tion at dos&shy;es that were safe and well tol&shy;er&shy;at&shy;ed,&rdquo; said Ca&shy;r&shy;ole Ho, the chief med&shy;ical of&shy;fi&shy;cer, in a state&shy;ment.</p>
+<p>That was good enough for a 7% pop on the stock price <a href="https://finance.yahoo.com/q?s=DNLI" title="DNLI on Yahoo Finance" target="_blank" rel="nofollow noopener">$DNLI</a> in pre-mar&shy;ket trad&shy;ing Thurs&shy;day.</p><div class="epn_ad_wrapper"><div class="epn_article_ad" id="rakia_within_article_1146946122" data-slot="/21729248569/rakia_within_article"></div></div>
+<p>De&shy;nali didn&rsquo;t ig&shy;nore the re&shy;cent work high&shy;light&shy;ing LRRK2&rsquo;s ex&shy;pand&shy;ing role as a like&shy;ly cul&shy;prit for Parkin&shy;son&rsquo;s. CEO Ryan Watt high&shy;light&shy;ed &ldquo;mount&shy;ing ev&shy;i&shy;dence sup&shy;port&shy;ing a role of LRRK2 in&shy;hi&shy;bi&shy;tion in the broad&shy;er spo&shy;radic Parkin&shy;son&rsquo;s dis&shy;ease pop&shy;u&shy;la&shy;tion, in ad&shy;di&shy;tion to Parkin&shy;son&rsquo;s dis&shy;ease ge&shy;net&shy;i&shy;cal&shy;ly as&shy;so&shy;ci&shy;at&shy;ed with a LRRK2&nbsp;mu&shy;ta&shy;tion.&rdquo;</p>
+<div class="epn_image epn_image_aside"><img decoding="async" src="https://endpts.com/wp-content/uploads/2018/08/J.-Timothy-Greenamyre-e1533213612896.jpg"><span>J. Tim&shy;o&shy;thy Greenamyre</span></div>
+<p>Dr. J. Tim&shy;o&shy;thy Greenamyre, chief of the Move&shy;ment Dis&shy;or&shy;ders Di&shy;vi&shy;sion at the Uni&shy;ver&shy;si&shy;ty of Pitts&shy;burgh Med&shy;ical Cen&shy;ter in Penn&shy;syl&shy;va&shy;nia pub&shy;lished a study just days ago as&shy;sert&shy;ing that a va&shy;ri&shy;ety of trig&shy;gers set LRRK2 on a de&shy;struc&shy;tive course in Parkin&shy;son&rsquo;s pa&shy;tients.</p>
+<p>&ldquo;This dis&shy;cov&shy;ery is <a href="https://www.medicalnewstoday.com/articles/322604.php">ex&shy;treme&shy;ly con&shy;se&shy;quen&shy;tial for Parkin&shy;son&rsquo;s dis&shy;ease</a> be&shy;cause it sug&shy;gests that ther&shy;a&shy;pies cur&shy;rent&shy;ly be&shy;ing de&shy;vel&shy;oped for a small group of pa&shy;tients may ben&shy;e&shy;fit every&shy;body with the dis&shy;ease,&rdquo; he said.</p>
+<p>You can be sure that news made the rounds at De&shy;nali, and every&shy;where else in the Parkin&shy;son&rsquo;s com&shy;mu&shy;ni&shy;ty, which ac&shy;counts for mil&shy;lions of pa&shy;tients world&shy;wide.</p>
+
+
+<div class="epn_tag_box">
+    
+</div>
+
+<div class="epn_author_box">
+    <h3 class="epn_section_title">AUTHOR</h3>
+    <div class="single_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2019/05/authors-john.jpg');"></div>
+    <div class="epn_text">
+        <h3><a href="https://endpts.com/author/john-carroll/" title="See all stories by John Carroll">John Carroll</a></h3>
+        <h4>Editor & Founder</h4>
+        <div class="epn_social">
+            <div class="epn_left">
+                <a href="mailto:john@endpointsnews.com" class="epn_mail">john@endpointsnews.com</a>
+                <a href="https://twitter.com/JohnCendpts" title="Find John Carroll on Twitter" rel="nofollow noopener" target="_blank" class="epn_twitter">@JohnCendpts</a>
+            </div>
+            <div class="epn_right">
+                <a href="https://www.linkedin.com/in/john-carroll-884aa410/" title="Find John Carroll on LinkedIn"  rel="nofollow noopener" target="_blank" class="epn_linkedin">John Carroll on LinkedIn</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+</article>
+            <article class="epn_regular_section epn_white_box epn_sponsored_article" data-aid="NOR3e07h">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/12/Image-26-1800x8002-1-1.jpg">
+    
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/sp/a-new-era-of-collaboration-promises-to-deliver-more-value-for-patients/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/sp/a-new-era-of-collaboration-promises-to-deliver-more-value-for-patients/&title=A%20New%20Era%20of%20Collaboration%20Promises%20to%20Deliver%20More%20Value%20for%20Patients&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=A%20New%20Era%20of%20Collaboration%20Promises%20to%20Deliver%20More%20Value%20for%20Patients - https://endpts.com/sp/a-new-era-of-collaboration-promises-to-deliver-more-value-for-patients/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    <div class="epn_section_title epn_text_color_yellow-dark"><span>SPONSORED</span></div>
+    <div class="epn_time">January 2, 2023 06:00 AM EST</div>
+    
+</div>
+        
+        <h1>A New Era of Col&shy;lab&shy;o&shy;ra&shy;tion Promis&shy;es to De&shy;liv&shy;er More Val&shy;ue for Pa&shy;tients</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/12/Untitled-design-13.png');"></div>
+    <div class="epn_text">
+        <h3>Astellas Pharma Inc.</h3>
+        
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p><em>As life science executives from around the world head to San Francisco this January for the premier week in healthcare partnering, Issei Tsukamoto, Head of Business Development, Mike Luther, Head of Search &amp; Evaluation, and Chieko Mori, Head of Transactions, from Astellas share their perspectives on how partnering approaches need to change to meet the challenges of a rapidly evolving industry. Additional insights are provided by Gary Starling, Chief Scientific Officer of Xyphos Biosciences, a biotechnology company that is advancing the development of a novel, flexible cancer cell therapy platform, and was acquired by Astellas in 2019. </em></p>
+
+<div class="epn_more">
+    <button type="button" class="epn_ux_button epn_more">Read More</button>
+</div>
+
+        </div>
+    </div>
+</article>
+            <article class="epn_regular_section epn_white_box epn_article_preview epn_article_premium" data-aid="NOR1e0/i">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/12/nda22_fi.jpg">
+    
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/fda-drug-approvals-list-2022-including-dates-indications-and-price/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/fda-drug-approvals-list-2022-including-dates-indications-and-price/&title=Every%20drug%20approved%20in%202022%3A%20A%20year%20of%20fewer%20new%20products%2C%20but%20gene-therapy%20firsts%20and%20new%20blockbusters&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Every%20drug%20approved%20in%202022%3A%20A%20year%20of%20fewer%20new%20products%2C%20but%20gene-therapy%20firsts%20and%20new%20blockbusters - https://endpts.com/fda-drug-approvals-list-2022-including-dates-indications-and-price/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">January 3, 2023 10:04 AM EST<span class="epn_time_updated">Updated 12:02 PM</span></div>
+    <div class="epn_channel channel-rd"><a href="https://endpts.com/channel/rd/" title="Channel: R&amp;D"><span>R&amp;D</span></a></div><div class="epn_channel channel-special"><a href="https://endpts.com/channel/special/" title="Channel: Special"><span>Special</span></a></div><div class="epn_channel channel-fda-plus"><a href="https://endpts.com/channel/fda-plus/" title="Channel: FDA+"><span>FDA+</span></a></div>
+</div>
+        
+        <h1>Every drug ap&shy;proved in 2022: A year of few&shy;er new prod&shy;ucts, but gene-ther&shy;a&shy;py firsts and new block&shy;busters</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2019/05/epn_favicon.png');"></div>
+    <div class="epn_text">
+        <h3>ENDPOINTS</h3>
+        
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p style="font-weight: 400;">The year&rsquo;s crop of US drug approvals won&rsquo;t rival past vintages for quantity. But of the 45 drugs cleared for use by the FDA in 2022, a third are shaping up to be blockbusters, with high expectations for Lilly&rsquo;s new diabetes drug, Bristol Myers Squibb&rsquo;s TYK2 inhibitor and Gilead&rsquo;s new HIV treatment.</p>
+<p style="font-weight: 400;">The promise of gene therapy became a reality in 2022, with new funding for the FDA to work through its backlog of applications, and three new approvals for bluebird bio (for beta thalassemia and early cerebral adrenoleukodystrophy) and CSL (for hemophilia B). With those approvals came new breakthroughs in price: The $2 million-plus treatment costs are likely to further test the bounds of the commercial market.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_premium_logo.svg" alt="Endpoints Premium">
+    <h3>Premium subscription required</h3>
+    <p>Unlock this article along with other benefits by subscribing to one of our paid plans. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_pw_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_pw_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+        </div>
+    </div>
+</article>
+<section class="epn_regular_section epn_instream_ad epn_ad_wrapper"><div id="rakia_in_stream_572820678" data-slot="/21729248569/rakia_instream"></div></section><article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR5f0Pn">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/05/Stephane-Bancel-Moderna-AP-tile1.jpg">
+    <div class="epn_description"><span>Stéphane Bancel, Moderna CEO (AP Photo/Charles Krupa)</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/modernas-globetrotting-bd-team-snags-an-mrna-upstart-with-some-handy-new-tech-tools/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/modernas-globetrotting-bd-team-snags-an-mrna-upstart-with-some-handy-new-tech-tools/&title=Moderna%27s%20globetrotting%20BD%20team%20snags%20an%20mRNA%20upstart%20with%20some%20handy%20new%20tech%20tools&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Moderna%27s%20globetrotting%20BD%20team%20snags%20an%20mRNA%20upstart%20with%20some%20handy%20new%20tech%20tools - https://endpts.com/modernas-globetrotting-bd-team-snags-an-mrna-upstart-with-some-handy-new-tech-tools/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">January 4, 2023 07:00 AM EST</div>
+    <div class="epn_channel channel-deals"><a href="https://endpts.com/channel/deals/" title="Channel: Deals"><span>Deals</span></a></div>
+</div>
+        
+        <h1>Mod&shy;er&shy;na's glo&shy;be&shy;trot&shy;ting BD team snags an mR&shy;NA up&shy;start with some handy new tech tools</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2019/05/authors-john.jpg');"></div>
+    <div class="epn_text">
+        <h3>John Carroll</h3>
+        <h4>Editor & Founder</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Moderna CEO St&eacute;phane Bancel made it clear early on in their M&amp;A mapping phase that the biotech would be hunting the world for just the right mRNA-related deals to build the company into a global powerhouse. And nothing illustrates that strategy better than the $85 million tuck-in that the biotech is unveiling this morning.</p>
+<p>Bancel has struck a deal to buy Tokyo-based OriCiro Genomics and its work on cell-free synthesis and amplification of plasmid DNA, building up their set of tech for manufacturing aimed at scaling up production faster and carving weeks out of the process.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,800+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box epn_article_full">
+    <div class="epn_text">
+        <div class="epn_byline epn_underlined">
+            <div class="epn_social">
+                <span data-link="https://careers.endpts.com/jobs/182948300-director-of-preclinical-pharmacology-at-stanford-innovative-medicines-accelerator" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://careers.endpts.com/jobs/182948300-director-of-preclinical-pharmacology-at-stanford-innovative-medicines-accelerator&title=Director%20of%20Preclinical%20Pharmacology%20at%20Stanford%20Innovative%20Medicines%20Accelerator&source=https://endpts.com/" class="epn_byline_linkedin"></a>
+                <a href="https://twitter.com/intent/tweet?text=Director%20of%20Preclinical%20Pharmacology%20at%20Stanford%20Innovative%20Medicines%20Accelerator%20-%20https%3A%2F%2Fcareers.endpts.com%2Fjobs%2F182948300-director-of-preclinical-pharmacology-at-stanford-innovative-medicines-accelerator" class="epn_byline_twitter"></a>
+            </div>
+            <div class="epn_section_title careers_title"><span>ENDPOINTS CAREERS</span></div>
+        </div>
+        <div class="epn_content">
+            <div class="careers_box">
+                <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/careers_logo.png');"></div>
+                <div class="epn_text">
+                    <h3><a href="https://careers.endpts.com/jobs/182948300-director-of-preclinical-pharmacology-at-stanford-innovative-medicines-accelerator" target="_blank">Director of Preclinical Pharmacology</a></h3>
+                    <h4>Stanford Innovative Medicines Accelerator</h4>
+                    <h4>Palo Alto, CA, USA</h4>
+                    <div>
+                        <a href="https://careers.endpts.com/jobs/182948300-director-of-preclinical-pharmacology-at-stanford-innovative-medicines-accelerator" class="epn_ux_button careers_but" target="_blank">view job offer</a>
+                        <a href="https://careers.endpts.com/products" rel="nofollow noopener" target="_blank" class="post_job">post your job now</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box " data-aid="NOR5fkLl">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2023/01/John-Scarlett-Geron-tile.jpg">
+    <div class="epn_description"><span>John Scarlett, Geron CEO</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/geron-reports-positive-phase-3-data-for-myelodysplastic-syndromes/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/geron-reports-positive-phase-3-data-for-myelodysplastic-syndromes/&title=After%20three-decade%20journey%2C%20Geron%20sees%20new%20life%20in%20PhIII%20data%20on%20MDS%20drug%2C%20plots%20path%20to%20approval&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=After%20three-decade%20journey%2C%20Geron%20sees%20new%20life%20in%20PhIII%20data%20on%20MDS%20drug%2C%20plots%20path%20to%20approval - https://endpts.com/geron-reports-positive-phase-3-data-for-myelodysplastic-syndromes/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">January 4, 2023 11:27 AM EST</div>
+    <div class="epn_channel channel-rd"><a href="https://endpts.com/channel/rd/" title="Channel: R&amp;D"><span>R&amp;D</span></a></div>
+</div>
+        
+        <h1>Af&shy;ter three-decade jour&shy;ney, Geron sees new life in PhI&shy;II da&shy;ta on MDS drug, plots path to ap&shy;proval</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/07/lei-lei-wu.jpg');"></div>
+    <div class="epn_text">
+        <h3>Lei Lei Wu</h3>
+        <h4>News Reporter</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Geron, founded in 1990 as an anti-aging company, has almost completed its metamorphosis.</p>
+<p>Wednesday morning, the Bay Area biotech unveiled that its drug imetelstat succeeded in a Phase III trial of nearly 180 patients with low-risk myelodysplastic syndromes, or MDS, helping more patients go eight weeks without blood transfusions than placebo. But patients who got the drug also experienced significant side effects, including low platelet and white blood cell counts.</p>
+
+<div class="epn_more">
+    <button type="button" class="epn_ux_button epn_more">Read More</button>
+</div>
+
+        </div>
+    </div>
+</article>
+            <article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR5f0Xm">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2023/01/Peter-Anastasiou-Capsida-tile.jpg">
+    <div class="epn_description"><span>Peter Anastasiou, Capsida CEO</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/capsida-makes-55m-deal-with-eli-lilly-to-develop-gene-therapies/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/capsida-makes-55m-deal-with-eli-lilly-to-develop-gene-therapies/&title=Capsida%20makes%20%2455M%20deal%20with%20Eli%20Lilly%20to%20develop%20gene%20therapies&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Capsida%20makes%20%2455M%20deal%20with%20Eli%20Lilly%20to%20develop%20gene%20therapies - https://endpts.com/capsida-makes-55m-deal-with-eli-lilly-to-develop-gene-therapies/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">January 4, 2023 07:45 AM EST<span class="epn_time_updated">Updated 10:48 AM</span></div>
+    <div class="epn_channel channel-deals"><a href="https://endpts.com/channel/deals/" title="Channel: Deals"><span>Deals</span></a></div><div class="epn_channel channel-rd"><a href="https://endpts.com/channel/rd/" title="Channel: R&amp;D"><span>R&amp;D</span></a></div><div class="epn_channel channel-pharma"><a href="https://endpts.com/channel/pharma/" title="Channel: Pharma"><span>Pharma</span></a></div>
+</div>
+        
+        <h1>Cap&shy;si&shy;da makes $55M deal with Eli Lil&shy;ly to de&shy;vel&shy;op gene ther&shy;a&shy;pies</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/11/drew-armstrong.jpg');"></div>
+    <div class="epn_text">
+        <h3>Drew Armstrong</h3>
+        <h4>Executive Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Capsida Biotherapeutics has added another Big Pharma partner for its gene therapy platform, striking a deal with Eli Lilly to develop therapies for central nervous system diseases.</p>
+<p>Eli Lilly will pay $55 million upfront, in cash plus a commitment to join a future fundraise. Capsida will be eligible for $685 million in milestone payments, plus royalties. Capsida will also get the option to join in on development and commercialization of one product under the agreement, in exchange for a share of profits.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,800+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><section class="epn_regular_section epn_instream_ad epn_ad_wrapper"><div id="rakia_in_stream_734660874" data-slot="/21729248569/rakia_instream"></div></section><article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR5f0Tg">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/02/Matt-Gline-Getty-1-scaled.jpg">
+    <div class="epn_description"><span>Matt Gline (Getty Images)</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/roivants-ulcerative-colitis-drug-from-pfizer-shows-promising-data-in-early-readout/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/roivants-ulcerative-colitis-drug-from-pfizer-shows-promising-data-in-early-readout/&title=Roivant%27s%20ulcerative%20colitis%20drug%20from%20Pfizer%20shows%20promising%20data%20in%20early%20readout&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Roivant%27s%20ulcerative%20colitis%20drug%20from%20Pfizer%20shows%20promising%20data%20in%20early%20readout - https://endpts.com/roivants-ulcerative-colitis-drug-from-pfizer-shows-promising-data-in-early-readout/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">January 4, 2023 06:05 AM EST<span class="epn_time_updated">Updated 06:16 AM</span></div>
+    <div class="epn_channel channel-rd"><a href="https://endpts.com/channel/rd/" title="Channel: R&amp;D"><span>R&amp;D</span></a></div>
+</div>
+        
+        <h1>Roivan&shy;t's ul&shy;cer&shy;a&shy;tive col&shy;i&shy;tis drug from Pfiz&shy;er shows promis&shy;ing da&shy;ta in ear&shy;ly read&shy;out</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/11/drew-armstrong.jpg');"></div>
+    <div class="epn_text">
+        <h3>Drew Armstrong</h3>
+        <h4>Executive Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Roivant&rsquo;s ulcerative colitis drug acquired from Pfizer last month has already produced positive data in the first readout of the Phase IIb trial.</p>
+<p>The company is now planning for a Phase III test, claiming in a press release that the drug has &ldquo;best-in-indication potential&rdquo; as a first- or second-line treatment. The trial included patients who had received prior therapy, including anti-TNF drugs, steroids, JAK inhibitors and other standard treatments, and some patients had a biomarker associated with the disease.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,800+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box " data-aid="NOR5fUfv">
+    
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/pfizer-leads-top-selling-pharma-forecast-evaluate-report/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/pfizer-leads-top-selling-pharma-forecast-evaluate-report/&title=Pfizer%20leads%20top-selling%20pharma%20forecast%20%E2%80%94%20Evaluate%20report&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Pfizer%20leads%20top-selling%20pharma%20forecast%20%E2%80%94%20Evaluate%20report - https://endpts.com/pfizer-leads-top-selling-pharma-forecast-evaluate-report/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">January 4, 2023 03:15 PM EST</div>
+    <div class="epn_channel channel-rd"><a href="https://endpts.com/channel/rd/" title="Channel: R&amp;D"><span>R&amp;D</span></a></div>
+</div>
+        
+        <h1>Pfiz&shy;er leads top-sell&shy;ing phar&shy;ma fore&shy;cast — Eval&shy;u&shy;ate re&shy;port</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2020/07/nicole-defeudis.jpg');"></div>
+    <div class="epn_text">
+        <h3>Nicole DeFeudis</h3>
+        <h4>Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Pfizer upped its 2022 Covid vaccine guidance by $2 billion last quarter on the heels of its bivalent booster launch. While we&rsquo;ve yet to see the full-year figures, <i>Evaluate </i>expects the good fortune will continue into this year.</p>
+<p>The pharma giant made the top of Evaluate&rsquo;s <a href="https://info.evaluate.com/rs/607-YGS-364/images/Vantage%20Preview%20Report%202023.pdf" target="_blank" rel="nofollow noopener">projected list</a> of top-selling pharma companies in 2023, with a forecast of more than $70 billion in prescription drug sales. The company made a record $81 billion in 2021, and $22.6 billion in Q3 of last year alone. Despite slow booster uptake in the US &mdash; just over 15% of Americans 5 years and older have rolled up their sleeves &mdash; Evaluate predicts that Comirnaty and Paxlovid sales will make Pfizer a top earner next year.</p>
+
+<div class="epn_more">
+    <button type="button" class="epn_ux_button epn_more">Read More</button>
+</div>
+
+        </div>
+    </div>
+</article>
+            <article class="epn_regular_section epn_white_box epn_article_full">
+    <div class="epn_text">
+        <div class="epn_byline epn_underlined">
+            <div class="epn_social">
+                <span data-link="https://careers.endpts.com/jobs/177507734-site-head-houston-cell-gene-at-lonza" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://careers.endpts.com/jobs/177507734-site-head-houston-cell-gene-at-lonza&title=Site%20Head%20-%20Houston%2C%20Cell%20%26%20Gene%20at%20Lonza&source=https://endpts.com/" class="epn_byline_linkedin"></a>
+                <a href="https://twitter.com/intent/tweet?text=Site%20Head%20-%20Houston%2C%20Cell%20%26%20Gene%20at%20Lonza%20-%20https%3A%2F%2Fcareers.endpts.com%2Fjobs%2F177507734-site-head-houston-cell-gene-at-lonza" class="epn_byline_twitter"></a>
+            </div>
+            <div class="epn_section_title careers_title"><span>ENDPOINTS CAREERS</span></div>
+        </div>
+        <div class="epn_content">
+            <div class="careers_box">
+                <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/careers_logo.png');"></div>
+                <div class="epn_text">
+                    <h3><a href="https://careers.endpts.com/jobs/177507734-site-head-houston-cell-gene-at-lonza" target="_blank">Site Head - Houston, Cell & Gene</a></h3>
+                    <h4>Lonza</h4>
+                    <h4>Houston, TX, USA</h4>
+                    <div>
+                        <a href="https://careers.endpts.com/jobs/177507734-site-head-houston-cell-gene-at-lonza" class="epn_ux_button careers_but" target="_blank">view job offer</a>
+                        <a href="https://careers.endpts.com/products" rel="nofollow noopener" target="_blank" class="post_job">post your job now</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box " data-aid="NOR5f07l">
+    
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/januarys-new-drug-price-increases-take-off-without-overcompensating-for-upcoming-inflation-linked-rebates/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/januarys-new-drug-price-increases-take-off-without-overcompensating-for-upcoming-inflation-linked-rebates/&title=January%E2%80%99s%20new%20drug%20price%20increases%20take%20off%20without%20overcompensating%20for%20upcoming%20inflation-linked%20rebates&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=January%E2%80%99s%20new%20drug%20price%20increases%20take%20off%20without%20overcompensating%20for%20upcoming%20inflation-linked%20rebates - https://endpts.com/januarys-new-drug-price-increases-take-off-without-overcompensating-for-upcoming-inflation-linked-rebates/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">January 4, 2023 02:33 PM EST<span class="epn_time_updated">Updated 03:36 PM</span></div>
+    <div class="epn_channel channel-pharma"><a href="https://endpts.com/channel/pharma/" title="Channel: Pharma"><span>Pharma</span></a></div>
+</div>
+        
+        <h1>Jan&shy;u&shy;ary’s new drug price in&shy;creas&shy;es take off with&shy;out over&shy;com&shy;pen&shy;sat&shy;ing for up&shy;com&shy;ing in&shy;fla&shy;tion-linked re&shy;bates</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2019/05/zach_brennan.jpg');"></div>
+    <div class="epn_text">
+        <h3>Zachary Brennan</h3>
+        <h4>Senior Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Pharma&rsquo;s annual price increases on drugs &mdash; the vast majority of which usually occur in January of every year &mdash; didn&rsquo;t noticeably spike this year (so far) when compared to recent years, and experts say it doesn&rsquo;t seem like pharma is desperate yet to make up for what may be major losses in sales thanks to government negotiations for some high-earning drugs come 2026.</p>
+<p>Analysts at 46Brooklyn published their latest 450+ available increases on list prices (not to be confused with the prices people pay out of pocket), as of Jan. 1, finding that as with previous years, most of the increases remained at or below the industry bar of 10%, and a median price increase of 5% so far in 2023.</p>
+
+<div class="epn_more">
+    <button type="button" class="epn_ux_button epn_more">Read More</button>
+</div>
+
+        </div>
+    </div>
+</article>
+            <section class="epn_regular_section epn_instream_ad epn_ad_wrapper"><div id="rakia_in_stream_1716509670" data-slot="/21729248569/rakia_instream"></div></section><article class="epn_regular_section epn_white_box " data-aid="NOR5fkLg">
+    
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/fda-policy-change-opens-the-door-for-abortion-pill-in-pharmacies/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/fda-policy-change-opens-the-door-for-abortion-pill-in-pharmacies/&title=FDA%20policy%20change%20opens%20the%20door%20for%20abortion%20pill%20in%20pharmacies&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=FDA%20policy%20change%20opens%20the%20door%20for%20abortion%20pill%20in%20pharmacies - https://endpts.com/fda-policy-change-opens-the-door-for-abortion-pill-in-pharmacies/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">January 4, 2023 12:37 PM EST<span class="epn_time_updated">Updated 03:21 PM</span></div>
+    <div class="epn_channel channel-pharma"><a href="https://endpts.com/channel/pharma/" title="Channel: Pharma"><span>Pharma</span></a></div>
+</div>
+        
+        <h1>FDA pol&shy;i&shy;cy change opens the door for abor&shy;tion pill in phar&shy;ma&shy;cies</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2020/07/nicole-defeudis.jpg');"></div>
+    <div class="epn_text">
+        <h3>Nicole DeFeudis</h3>
+        <h4>Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>The FDA will now allow certain pharmacies to dispense mifepristone, a pill used in combination with another medicine, to end early pregnancies.</p>
+<p>After conducting a &ldquo;comprehensive review&rdquo; of mifepristone&rsquo;s risk evaluation and mitigation strategy (REMS) &mdash; which previously required patients to receive the drug in a clinic, medical office or hospital &mdash; the agency on Tuesday approved a&nbsp;<a href="https://www.fda.gov/drugs/postmarket-drug-safety-information-patients-and-providers/questions-and-answers-mifepristone-medical-termination-pregnancy-through-ten-weeks-gestation#The%20January%202023%20REMS%20Modification" target="_blank" rel="nofollow noopener">modification</a> that permits certified pharmacies to sell Danco Lab&rsquo;s brand-name Mifeprex pills and a generic manufactured by GenBioPro.</p>
+
+<div class="epn_more">
+    <button type="button" class="epn_ux_button epn_more">Read More</button>
+</div>
+
+        </div>
+    </div>
+</article>
+            
+            </div>
+            <div class="col-8 col-md-2">
+                <div class="epn_sticky_sidebar">
+                    <div class="epn_white_box epn_stream_box">
+                        <div class="epn_item epn_sidebar_active">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/as-a-new-study-spotlights-a-growing-role-for-lrrk2-in-parkinsons-denali-clears-an-early-trial-hurdle/" title="As a new study spotlights a growing role for LRRK2 in Parkinson’s, Denali clears an early trial hurdle" data-is-alink="Nul5f0fj">As a new study spot&shy;lights a grow&shy;ing role for LRRK2 in Parkin&shy;son’s, De&shy;nali clears an ear&shy;ly tri&shy;al hur&shy;dle</a>
+    </h3>
+</div><div class="epn_item">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/sp/a-new-era-of-collaboration-promises-to-deliver-more-value-for-patients/" title="A New Era of Collaboration Promises to Deliver More Value for Patients" data-is-alink="NOR3e07h">A New Era of Col&shy;lab&shy;o&shy;ra&shy;tion Promis&shy;es to De&shy;liv&shy;er More Val&shy;ue for Pa&shy;tients</a>
+    </h3>
+</div><div class="epn_item">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/fda-drug-approvals-list-2022-including-dates-indications-and-price/" title="Every drug approved in 2022: A year of fewer new products, but gene-therapy firsts and new blockbusters" data-is-alink="NOR1e0/i">Every drug ap&shy;proved in 2022: A year of few&shy;er new prod&shy;ucts, but gene-ther&shy;a&shy;py firsts and new block&shy;busters</a>
+    </h3>
+</div><div class="epn_item">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/modernas-globetrotting-bd-team-snags-an-mrna-upstart-with-some-handy-new-tech-tools/" title="Moderna's globetrotting BD team snags an mRNA upstart with some handy new tech tools" data-is-alink="NOR5f0Pn">Mod&shy;er&shy;na's glo&shy;be&shy;trot&shy;ting BD team snags an mR&shy;NA up&shy;start with some handy new tech tools</a>
+    </h3>
+</div><div class="epn_item">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/geron-reports-positive-phase-3-data-for-myelodysplastic-syndromes/" title="After three-decade journey, Geron sees new life in PhIII data on MDS drug, plots path to approval" data-is-alink="NOR5fkLl">Af&shy;ter three-decade jour&shy;ney, Geron sees new life in PhI&shy;II da&shy;ta on MDS drug, plots path to ap&shy;proval</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/capsida-makes-55m-deal-with-eli-lilly-to-develop-gene-therapies/" title="Capsida makes $55M deal with Eli Lilly to develop gene therapies" data-is-alink="NOR5f0Xm">Cap&shy;si&shy;da makes $55M deal with Eli Lil&shy;ly to de&shy;vel&shy;op gene ther&shy;a&shy;pies</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/roivants-ulcerative-colitis-drug-from-pfizer-shows-promising-data-in-early-readout/" title="Roivant's ulcerative colitis drug from Pfizer shows promising data in early readout" data-is-alink="NOR5f0Tg">Roivan&shy;t's ul&shy;cer&shy;a&shy;tive col&shy;i&shy;tis drug from Pfiz&shy;er shows promis&shy;ing da&shy;ta in ear&shy;ly read&shy;out</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/pfizer-leads-top-selling-pharma-forecast-evaluate-report/" title="Pfizer leads top-selling pharma forecast — Evaluate report" data-is-alink="NOR5fUfv">Pfiz&shy;er leads top-sell&shy;ing phar&shy;ma fore&shy;cast — Eval&shy;u&shy;ate re&shy;port</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/januarys-new-drug-price-increases-take-off-without-overcompensating-for-upcoming-inflation-linked-rebates/" title="January’s new drug price increases take off without overcompensating for upcoming inflation-linked rebates" data-is-alink="NOR5f07l">Jan&shy;u&shy;ary’s new drug price in&shy;creas&shy;es take off with&shy;out over&shy;com&shy;pen&shy;sat&shy;ing for up&shy;com&shy;ing in&shy;fla&shy;tion-linked re&shy;bates</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/fda-policy-change-opens-the-door-for-abortion-pill-in-pharmacies/" title="FDA policy change opens the door for abortion pill in pharmacies" data-is-alink="NOR5fkLg">FDA pol&shy;i&shy;cy change opens the door for abor&shy;tion pill in phar&shy;ma&shy;cies</a>
+    </h3>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><footer class="epn_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-2">
+                <a href="/" class="epn_logo">
+
+                    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn-logo-tagline-negative.svg" alt="Endpoints News">
+                </a>
+                <div class="epn_info">
+                    <p>Bioscience &amp; Technology Business Center<br>The University of Kansas<br>Lawrence, Kansas<!-- <br>2029 Becker Drive, <br>(785) 813-1733 -->
+                    </p>
+                </div>
+                <div class="epn_social">
+                    <a href="https://twitter.com/endpts" rel="nofollow noopener" target="_blank" class="epn_footer_twitter" title="Endpoints on Twitter"></a>
+                    <a href="https://www.linkedin.com/company/endpoints" rel="nofollow noopener" target="_blank" class="epn_footer_linkedin" title="Endpoints on LinkedIn"></a>
+
+                </div>
+            </div>
+
+
+            <nav class="col-8 col-md-1">
+                <h3>Latest</h3>
+                <ul>
+                    <li><a href="https://endpts.com/news/" title="Latest news">All News</a></li>
+                    <li><a href="https://endpts.com/premium/" title="Premium Content">Premium Content</a></li>
+                    <li><a href="https://endpts.com/dont-miss/" title="Don't miss stories">Don't Miss</a></li>
+                    <li><a href="https://endpts.com/channel/special/" title="Special stories">Special</a></li>
+                    <li><a href="https://endpts.com/channel/in-focus/" title="In Focus stories">In Focus</a></li>
+                    <!--<li><a href="#">Protocols</a></li>-->
+
+                </ul>
+            </nav>
+
+            <nav class="col-8 col-md-2">
+                <h3>Channels</h3>
+                <ul class="epn_menu_2_columns">
+                    <li>
+                        <a href="https://endpts.com/channel/ai/" title="See Latest Stories in AI Channel">AI</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/bioregnum/" title="See Latest Stories in Bioregnum Channel">Bioregnum</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/biotech-voices/" title="See Latest Stories in Biotech Voices Channel">Biotech Voices</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/cell-gene-tx/" title="See Latest Stories in Cell/Gene Tx Channel">Cell/Gene Tx</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/china/" title="See Latest Stories in China Channel">China</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/coronavirus/" title="See Latest Stories in Coronavirus Channel">Coronavirus</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/deals/" title="See Latest Stories in Deals Channel">Deals</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/diagnostics/" title="See Latest Stories in Diagnostics Channel">Diagnostics</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/discovery/" title="See Latest Stories in Discovery Channel">Discovery</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/fda-plus/" title="See Latest Stories in FDA+ Channel">FDA+</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/financing/" title="See Latest Stories in Financing Channel">Financing</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/law/" title="See Latest Stories in Law Channel">Law</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/letters-to-the-editor/" title="See Latest Stories in Letters to the Editor Channel">Letters to the Editor</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/manufacturing/" title="See Latest Stories in Manufacturing Channel">Manufacturing</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/marketing/" title="See Latest Stories in Marketing Channel">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/opinion/" title="See Latest Stories in Opinion Channel">Opinion</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/outsourcing/" title="See Latest Stories in Outsourcing Channel">Outsourcing</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/peer-review/" title="See Latest Stories in Peer Review Channel">Peer Review</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/people/" title="See Latest Stories in People Channel">People</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/pharma/" title="See Latest Stories in Pharma Channel">Pharma</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/rd/" title="See Latest Stories in R&amp;D Channel">R&amp;D</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/startups/" title="See Latest Stories in Startups Channel">Startups</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/weekly/" title="See Latest Stories in Weekly Channel">Weekly</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="col-8 col-md-1">
+                <h3>More</h3>
+                <ul>
+                    <li>
+                        <a href="http://endpoints-news.rippling-ats.com/" rel="nofollow noopener" target="_blank" title="Work at Endpoints">Work at Endpoints</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/letter-to-editors/" target="_blank" title="Letter to Editors">Letter to Editors</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/ipo-tracker/" target="_blank" title="Endpoints News IPO Tracker">IPO Tracker</a>
+                    </li>
+                    <li>
+                        <a href="https://endpoints.studio/events/" target="_blank" title="Endpoints Events">Events</a>
+                    </li>
+                    <li><a href="https://webinars.endpts.com/" target="_blank" title="Endpoints Webinars">Webinars</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/sponsored/" title="See all Sponsored Posts">Sponsored Posts</a>
+                    </li>
+                    <li>
+                        <a href="https://endpoints.studio" target="_blank" title="Endpoints Studio">Advertise</a>
+                    </li>
+                    <li>
+                        <a href="https://store.endpts.com" target="_blank">Endpoints Merch</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/about-endpoints-news/" title="About Endpoints News">About Us</a>
+                    </li>
+                    <li>
+                        <span data-intercom-open  >Help</span>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="col-8 col-md-2">
+                <h3>Work in biotech</h3>
+                <ul>
+                    <li><a href="https://careers.endpts.com" title="Endpoints Careers">Endpoints Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row epn_copyright">
+            <div class="col-8 col-md  -2">
+                <p>© Endpoints Company 2023</p>
+            </div>
+            <nav class="col-8 col-md-6">
+                <ul>
+                    <li>
+                        <span data-intercom-open  >Help</span>
+                    </li>
+
+                    <li>
+                        <a href="https://mediakit.endpts.com" target="_blank">Advertise</a>
+                    </li>
+                    <li>
+                        <a href="https://www.iubenda.com/privacy-policy/286978" rel="nofollow noopener" target="_blank">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/an-update-on-the-endpoints-business-model-and-how-your-company-can-directly-support-it/">Business Model</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+<div class="modal epn_form epn_hidden_soft" tabindex="-1" role="dialog" id="epn_sign_in_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="epn_overlay epn_hidden_soft">
+                <div class="epn_loader_spinner epn_solid_gold epn_inside_overlay"></div>
+            </div>
+            <div class="modal-header">
+                <img src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+                <button class="epn_form_close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <fieldset class="epn_form_content">
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_golden">Log in to your account</span>
+                                </h3>
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_svg ux_envelope"></span>
+                                    <span>e-mail</span>
+                                </h3>
+                                <div class="epn_ux_input epn_no_grey_background">
+                                    <input type="email" id="epn_sign_in_modal_email" placeholder="E-mail" data-toggle="tooltip" data-placement="top">
+                                </div>
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_svg ux_https"></span>
+                                    <span>password</span>
+                                </h3>
+                                <div class="epn_ux_password ">
+                                    <button class="epn_ux_show_password">
+                                        <span class="epn_svg ux_eye"></span>
+                                        <span class="epn_svg ux_eye_not"></span>
+                                    </button>
+                                    <div class="epn_ux_input epn_no_grey_background">
+                                        <input type="password" id="epn_sign_in_modal_password" placeholder="Password" data-toggle="tooltip" data-placement="top">
+                                    </div>
+                                </div>
+                                <div class="epn_group epn_form_footer">
+                                    <div class="epn_half">
+                                        <button class="epn_form_link epn_form_opener" data-form="epn_reset_password_modal">Change my password</button>
+                                        <button class="epn_form_link epn_form_opener" data-form="epn_request_magic_link_modal">Get a magic email link</button>
+                                    </div>
+                                    <div class="epn_half epn_align_right">
+                                        <button class="epn_ux_button" id="epn_sign_in_modal_submit">LOG IN</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal epn_form epn_hidden_soft" tabindex="-1" role="dialog" id="epn_request_magic_link_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="epn_overlay epn_hidden_soft">
+                <div class="epn_loader_spinner epn_solid_gold epn_inside_overlay"></div>
+            </div>
+            <div class="modal-header">
+                <img src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+                <button class="epn_form_close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <fieldset class="epn_form_content">
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_golden">request magic link</span>
+                                </h3>
+                                <p>If you're already an Endpoints subscriber, enter your email below for a
+                                    <b>magic link that lets you log in quickly without using a password</b>. Please note the magic link is
+                                    <b>one-time use only</b> and expires after 24 hours.</p>
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_svg ux_envelope"></span>
+                                    <span>email</span>
+                                </h3>
+                                <div class="epn_ux_input epn_no_grey_background">
+                                    <input type="email" id="epn_request_magic_link_email" placeholder="E-mail" data-toggle="tooltip" data-placement="top">
+                                </div>
+                                <div class="epn_group epn_form_footer">
+                                    <div class="epn_half">
+                                        <button class="epn_ux_button epn_form_opener" data-form="epn_sign_in_modal">BACK</button>
+                                    </div>
+                                    <div class="epn_half epn_align_right">
+                                        <button class="epn_ux_button" id="epn_request_magic_link_submit">REQUEST</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal epn_form epn_hidden_soft" tabindex="-1" role="dialog" id="epn_reset_password_modal" aria-hidden ="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="epn_overlay epn_hidden_soft">
+                <div class="epn_loader_spinner epn_solid_gold epn_inside_overlay"></div>
+            </div>
+            <div class="modal-header">
+                <img src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+                <button class="epn_form_close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <fieldset class="epn_form_content">
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_golden">reset password</span>
+                                </h3>
+                                <p>We'll e-mail you a link to set a new password. Please note this link is one-time use only and is valid for only 24 hours.</p>
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_svg ux_envelope"></span>
+                                    <span>email</span>
+                                </h3>
+                                <div class="epn_ux_input epn_no_grey_background">
+                                    <input type="email" id="epn_reset_password_email" placeholder="E-mail" data-toggle="tooltip" data-placement="top">
+                                </div>
+                                <div class="epn_group epn_form_footer">
+                                    <div class="epn_half">
+                                        <button class="epn_ux_button epn_form_opener" data-form="epn_sign_in_modal">BACK</button>
+                                    </div>
+                                    <div class="epn_half epn_align_right">
+                                        <button class="epn_ux_button" id="epn_reset_password_submit">RESET</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal epn_form" tabindex="-1" role="dialog" id="epn_subscribe_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="epn_overlay epn_hidden_soft">
+            </div>
+            <div class="modal-header">
+                <img src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+                <button class="epn_form_close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="epn_form_content">
+                                <h3 class="epn_ux_caption">
+                                    <span>About You</span>
+                                </h3>
+                                <fieldset>
+                                    <div class="epn_ux_input">
+                                        <input type="email" id="epn_modal_subscribe_email" placeholder="E-mail" data-toggle="tooltip" data-placement="top">
+                                    </div>
+
+                                    <div class="epn_ux_input">
+                                        <input type="text" id="epn_modal_subscribe_name" placeholder="Full Name" data-toggle="tooltip" data-placement="top">
+                                    </div>
+
+                                    <div class="epn_ux_input">
+                                        <input type="text" id="epn_modal_subscribe_company" placeholder="Company" data-toggle="tooltip" data-placement="top">
+                                    </div>
+
+                                    <div class="epn_ux_input">
+                                        <input type="text" id="epn_modal_subscribe_job_title" placeholder="Job Title" data-toggle="tooltip" data-placement="top">
+                                    </div>
+                                </fieldset>
+                                <h3 class="epn_ux_caption my-3">
+                                    <span>Subscriptions</span>
+                                </h3>
+                                <fieldset>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS NEWS</span> <span class="epn_grey">Daily at 11:30 AM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_edition" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_edition"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">EARLY EDITION</span> <span class="epn_grey">Daily at 7:15 AM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_early_edition" checked="">
+                                            <label for="epn_modal_subscribe_early_edition"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS PHARMA</span> <span class="epn_grey">Daily at 2 PM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_pharma" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_pharma"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS MARKETING RX</span> <span class="epn_grey">Tue at 2 PM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_marketing_rx" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_marketing_rx"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS FDA+</span> <span class="epn_grey">Wed at 2 PM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_fda_plus" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_fda_plus"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS MANUFACTURING</span> <span class="epn_grey">Thu at 2 PM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_manufacturing" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_manufacturing"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS WEEKLY</span> <span class="epn_grey">Sat at 6 AM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_weekly" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_weekly"></label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="epn_group mt-4">
+                                    <button class="epn_ux_button epn_has_tooltip no_tooltip_on_hover" id="epn_modal_subscribe_submit" data-toggle="tooltip" data-placement="top">INSTANT SIGN UP</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/jquery.min.js?ver=3.6.1' id='jquery-js'></script>
+<script id='rakia_script-js-extra'>
+var parselyAjaxObject = {"site":"endpts.com"};
+var EP_ajax_object = {"ajax_url":"https:\/\/endpts.com\/wp-admin\/admin-ajax.php","assets":"https:\/\/endpts.com\/wp-content\/plugins\/endpoints\/assets\/","fallback_spinner":"https:\/\/endpts.com\/wp-content\/plugins\/endpoints\/assets\/images\/loading.gif","products":["early_edition","endpoints_edition","endpoints_pharma","endpoints_marketing_rx","endpoints_fda_plus","endpoints_manufacturing","endpoints_weekly"],"comment_source":"159015","intercom":"1","user_type":"Guest"};
+var isa = {"or":"1672881364","tp":"sa","ajax_url":"https:\/\/endpts.com\/wp-admin\/admin-ajax.php","ga_targeting":{"generic":{"faid":"Nul5f0fj"}},"hashes":["Nul5f0fj","NOR3e07h","NOR1e0\/i","NOR5f0Pn","NOR5fkLl","NOR5f0Xm","NOR5f0Tg","NOR5fUfv","NOR5f07l","NOR5fkLg"],"ca":"Nul5f0fj","lj":"NOR3fELu","ads":["rakia_in_stream_572820678","rakia_in_stream_734660874","rakia_in_stream_1716509670"]};
+</script>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/script.min.js?ver=1610241983' id='rakia_script-js'></script>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/infinite_scroll.min.js?ver=1610241983' id='infinite_rakia-js'></script>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/ca_animator.min.js?ver=1610241983' id='ca_animator-js'></script>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/bootstrap.bundle.min.js?ver=4.6.2' id='bootstrap_js-js'></script>
+<script src='https://cdn.parsely.com/keys/endpts.com/p.js' id='parsely-cfg-js'></script>
+<script id='dfp-js-extra'>
+var ad_units_data = {"\/21729248569\/rakia_banner_above_articles":{"div":"rakia_above_articles","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_above_tiles_homepage":{"div":"rakia_above_tiles","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_ipo_tracker_billboard":{"div":"rakia_ipo_tracker_billboard","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_ipo_tracker_instream":{"div":"rakia_ipo_tracker_instream","sizes":[[970,250],[340,120],[340,150],[340,200],[340,230],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_below_tiles_homepage":{"div":"rakia_below_tiles","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_within_article":{"div":"rakia_within_article","sizes":[[340,150],[340,200],[340,230],[340,250],[440,150],[440,190],[440,200],[760,150],[760,200],[760,250]]},"\/21729248569\/rakia_instream":{"div":"rakia_in_stream","sizes":[[340,150],[340,200],[340,230],[340,250],[520,150],[520,200],[520,220],[890,150],[890,200],[890,250]]},"\/21729248569\/rakia_sponsored_front_page":{"div":"rakia_sponsored_front_page","sizes":[[340,570],[340,595],[592,305]]},"\/21729248569\/rakia_banner_above_tiles_channels":{"div":"rakia_above_tiles_channel","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_below_tiles_channels":{"div":"rakia_below_tiles_channel","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_inarticle_adx":{"div":"rakia_within_article_adx","sizes":[[300,100],[300,250],[320,100],[336,280],[468,60],[728,90]]},"\/21729248569\/rakia_instream_adx":{"div":"rakia_in_stream_adx","sizes":[[300,100],[300,250],[320,100],[336,280],[468,60],[728,90]]},"isadx":"<section class=\"epn_regular_section epn_instream_ad epn_ad_wrapper\"><div id=\"ridis\" data-slot=\"\/21729248569\/rakia_instream_adx\"><\/div><\/section>","iaadx":"<div class=\"epn_ad_wrapper\"><div class=\"epn_article_ad\" id=\"ridia\" data-slot=\"\/21729248569\/rakia_inarticle_adx\"><\/div><\/div>"};
+</script>
+<script src='https://www.googletagservices.com/tag/js/gpt.js' id='dfp-js'></script>
+<script src='https://endpts.com/wp-content/plugins/endpoints/assets/js/endpoints.min.js?ver=1403438354' id='ep_script-js'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-0a161597335a680ce50","applicationID":"717633112","transactionName":"YlVSMUZUCxVQV0NcWVsfcQZAXAoIHkdeW1FZVR0VW0YR","queueTime":0,"applicationTime":541,"atts":"ThJRRw5OGBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

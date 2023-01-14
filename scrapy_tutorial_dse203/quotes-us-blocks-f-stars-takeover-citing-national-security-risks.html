@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-0a161597335a680ce50",applicationID:"717633112"};/*! For license information please see nr-loader-rum-1220.min.js.LICENSE.txt */
+!function(t,e){"object"==typeof exports&&"object"==typeof module?module.exports=e():"function"==typeof define&&define.amd?define([],e):"object"==typeof exports?exports.NRBA=e():t.NRBA=e()}(self,(function(){return function(){var t,e,n={9034:function(t,e,n){"use strict";var r=n(4168);e.Z=(0,r.ky)(16)},5973:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1])},4280:function(t,e,n){"use strict";n.d(e,{H:function(){return o}});var r=document.createElement("div");r.innerHTML="\x3c!--[if lte IE 6]><div></div><![endif]--\x3e\x3c!--[if lte IE 7]><div></div><![endif]--\x3e\x3c!--[if lte IE 8]><div></div><![endif]--\x3e\x3c!--[if lte IE 9]><div></div><![endif]--\x3e";var o,i=r.getElementsByTagName("div").length;o=4===i?6:3===i?7:2===i?8:1===i?9:0},5955:function(t,e,n){"use strict";n.d(e,{I:function(){return r}});var r=function(t,e){var n=this;return t&&"object"==typeof t?e&&"object"==typeof e?(Object.assign(this,e),void Object.entries(t).forEach((function(t){var e=t[0],r=t[1];n[e]=r}))):console.error("setting a Configurable requires a model to set its initial properties"):console.error("setting a Configurable requires an object as input")}},441:function(t,e,n){"use strict";n.d(e,{C:function(){return c},L:function(){return u}});var r=n(1424),o=n(5955),i={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function c(t){if(!t)throw new Error("All info objects require an agent identifier!");if(!a[t])throw new Error("Info for "+t+" was never set");return a[t]}function u(t,e){if(!t)throw new Error("All info objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"info")}},1476:function(t,e,n){"use strict";n.d(e,{Dg:function(){return c},Mt:function(){return u}});var r=n(1424),o=n(5955),i={privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0},metrics:{enabled:!0},page_action:{enabled:!0},page_view_event:{enabled:!0},page_view_timing:{enabled:!0},session_trace:{enabled:!0},spa:{enabled:!0}},a={};function c(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");a[t]=new o.I(e,i),(0,r.Qy)(t,a[t],"config")}function u(t,e){if(!t)throw new Error("All configuration objects require an agent identifier!");var n=function(t){if(!t)throw new Error("All configuration objects require an agent identifier!");if(!a[t])throw new Error("Configuration for "+t+" was never set");return a[t]}(t);if(n){for(var r=e.split("."),o=0;o<r.length-1;o++)if("object"!=typeof(n=n[r[o]]))return;n=n[r[r.length-1]]}return n}},2085:function(t,e,n){"use strict";n.d(e,{Y:function(){return r}});var r=(0,n(1424).mF)().o},1220:function(t,e,n){"use strict";n.d(e,{O:function(){return w},s:function(){return x}});var r={};n.r(r),n.d(r,{agent:function(){return a},match:function(){return f},version:function(){return c}});var o=n(4280),i=n(6959),a=null,c=null;if(navigator.userAgent){var u=navigator.userAgent,s=u.match(/Version\/(\S+)\s+Safari/);s&&-1===u.indexOf("Chrome")&&-1===u.indexOf("Chromium")&&(a="Safari",c=s[1])}function f(t,e){if(!a)return!1;if(t!==a)return!1;if(!e)return!0;if(!c)return!1;for(var n=c.split("."),r=e.split("."),o=0;o<r.length;o++)if(r[o]!==n[o])return!1;return!0}var d=n(5955),l=n(1424),v=n(4168),p=window.sessionStorage,h="NRBA_SESSION_ID";var g=n(1476),y=window.XMLHttpRequest,m=y&&y.prototype,b={};function w(t){if(!t)throw new Error("All runtime objects require an agent identifier!");if(!b[t])throw new Error("Runtime for "+t+" was never set");return b[t]}function x(t,e){if(!t)throw new Error("All runtime objects require an agent identifier!");var n,a;b[t]=new d.I(e,(n=t,{customTransaction:void 0,disabled:!1,features:{},maxBytes:6===o.H?2e3:3e4,offset:(0,i.yf)(),onerror:void 0,origin:""+window.location,ptid:void 0,releaseIds:{},sessionId:!0===(0,g.Mt)(n,"privacy.cookies_enabled")?(null===(a=p.getItem(h))&&(a=(0,v.ky)(16),p.setItem(h,a)),a):"0",xhrWrappable:y&&m&&m.addEventListener&&!/CriOS/.test(navigator.userAgent),userAgent:r})),(0,l.Qy)(t,b[t],"runtime")}},158:function(t,e,n){"use strict";n.d(e,{q:function(){return r}});var r=["1220","PROD"].filter((function(t){return t})).join(".")},3707:function(t,e,n){"use strict";n.d(e,{w:function(){return o}});var r={agentIdentifier:""},o=function(t){var e=this;if("object"!=typeof t)return console.error("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,r),Object.entries(t).forEach((function(t){var n=t[0],o=t[1];Object.keys(r).includes(n)&&(e.sharedContext[n]=o)}))}},1776:function(t,e,n){"use strict";n.d(e,{ee:function(){return r}});var r,o=n(1424),i=n(4217),a=n(357),c="nr@context",u=(0,o.fP)();function s(){}function f(){return new s}function d(){(r.backlog.api||r.backlog.feature)&&(r.aborted=!0,r.backlog={})}u.ee?r=u.ee:(r=function t(e,n){var o={},u={},l={},v={on:g,addEventListener:g,removeEventListener:y,emit:h,get:b,listeners:m,context:p,buffer:w,abort:d,aborted:!1,isBuffering:x,debugId:n,backlog:e&&e.backlog?e.backlog:{}};return v;function p(t){return t&&t instanceof s?t:t?(0,i.X)(t,c,f):f()}function h(t,n,o,i,a){if(!1!==a&&(a=!0),!r.aborted||i){e&&a&&e.emit(t,n,o);for(var c=p(o),s=m(t),f=s.length,d=0;d<f;d++)s[d].apply(c,n);var l=O()[u[t]];return l&&l.push([v,t,n,c]),c}}function g(t,e){o[t]=m(t).concat(e)}function y(t,e){var n=o[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return o[t]||[]}function b(e){return l[e]=l[e]||t(v,e)}function w(t,e){var n=O();v.aborted||(0,a.D)(t,(function(t,r){e=e||"feature",u[r]=e,e in n||(n[e]=[])}))}function x(t){return!!O()[u[t]]}function O(){return v.backlog}}(void 0,"globalEE"),u.ee=r)},7361:function(t,e,n){"use strict";n.d(e,{E:function(){return r},p:function(){return o}});var r=n(1776).ee.get("handle");function o(t,e,n,o,i){i?(i.buffer([t],o),i.emit(t,e,n)):(r.buffer([t],o),r.emit(t,e,n))}},3350:function(t,e,n){"use strict";n.d(e,{X:function(){return i}});var r=n(7361);i.on=a;var o=i.handlers={};function i(t,e,n,i){a(i||r.E,o,t,e,n)}function a(t,e,n,o,i){i||(i="feature"),t||(t=r.E);var a=e[i]=e[i]||{};(a[n]=a[n]||[]).push([t,o])}},4408:function(t,e,n){"use strict";n.d(e,{m:function(){return i}});var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(t){}function i(t){return r?{passive:!0,capture:!!t}:!!t}},4168:function(t,e,n){"use strict";function r(){var t=null,e=0,n=window.crypto||window.msCrypto;function r(){return t?15&t[e++]:16*Math.random()|0}n&&n.getRandomValues&&(t=n.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)a+="x"===(o=i[c])?r().toString(16):"y"===o?(o=3&r()|8).toString(16):o;return a}function o(t){var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(e=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<t;i++)o.push(a().toString(16));return o.join("");function a(){return e?15&e[n++]:16*Math.random()|0}}n.d(e,{Rl:function(){return r},ky:function(){return o}})},6959:function(t,e,n){"use strict";n.d(e,{nb:function(){return u},os:function(){return s},yf:function(){return c},zO:function(){return a}});var r=n(2364),o=(new Date).getTime(),i=o;function a(){return r.G&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-i}function c(){return o}function u(t){i=t}function s(){return i}},2364:function(t,e,n){"use strict";n.d(e,{G:function(){return r}});var r=void 0!==window.performance&&window.performance.timing&&void 0!==window.performance.timing.navigationStart},1793:function(t,e,n){"use strict";function r(t){var e,n=0;for(e=0;e<t.length;e++)n+=(e+1)*t.charCodeAt(e);return Math.abs(n)}n.d(e,{v:function(){return s},s:function(){return u}});var o=n(6972),i=n(5973),a=n(6959),c=n(2364),u=!0;function s(t){var e=function(){if(i.I&&i.I<9)return;if(c.G)return u=!1,window.performance.timing.navigationStart}()||function(){for(var t=document.cookie.split(" "),e=0;e<t.length;e++)if(0===t[e].indexOf("NREUM=")){for(var n,o,i,a,c=t[e].substring("NREUM=".length).split("&"),u=0;u<c.length;u++)0===c[u].indexOf("s=")?i=c[u].substring(2):0===c[u].indexOf("p=")?";"===(o=c[u].substring(2)).charAt(o.length-1)&&(o=o.substr(0,o.length-1)):0===c[u].indexOf("r=")&&";"===(n=c[u].substring(2)).charAt(n.length-1)&&(n=n.substr(0,n.length-1));if(n){var s=r(document.referrer);(a=s==n)||(a=r(document.location.href)==n&&s==o)}if(a&&i){if((new Date).getTime()-i>6e4)return;return i}}}();e&&((0,o.B)(t,"starttime",e),(0,a.nb)(e))}},6972:function(t,e,n){"use strict";n.d(e,{B:function(){return i},L:function(){return a}});var r=n(6959),o={};function i(t,e,n){void 0===n&&(n=(0,r.zO)()+(0,r.os)()),o[t]=o[t]||{},o[t][e]=n}function a(t,e,n,r){var i,a,c=t.sharedContext.agentIdentifier,u=null==(i=o[c])?void 0:i[n],s=null==(a=o[c])?void 0:a[r];void 0!==u&&void 0!==s&&t.store("measures",e,{value:s-u})}},7299:function(t,e,n){"use strict";n.d(e,{T:function(){return a}});var r=window,o=r;function i(){return o}var a={isFileProtocol:function(){var t=i(),e=!(!t.location||!t.location.protocol||"file:"!==t.location.protocol);e&&(a.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},847:function(t,e,n){"use strict";n.d(e,{K:function(){return a}});var r=n(1220),o=n(1476),i=["ajax","jserrors","metrics","page_action","page_view_event","page_view_timing","session_trace","spa"];function a(t){var e={};return i.forEach((function(n){e[n]=function(t,e){return!0!==(0,r.O)(e).disabled&&!1!==(0,o.Mt)(e,t+".enabled")}(n,t)})),e}},5023:function(t,e,n){"use strict";n.d(e,{W:function(){return o}});var r=n(1776),o=function(t,e,n){void 0===n&&(n=[]),this.agentIdentifier=t,this.aggregator=e,this.ee=r.ee.get(t),this.externalFeatures=n}},4217:function(t,e,n){"use strict";n.d(e,{X:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(t){}return t[e]=o,o}},357:function(t,e,n){"use strict";n.d(e,{D:function(){return o}});var r=Object.prototype.hasOwnProperty;function o(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}},603:function(t,e,n){"use strict";n.d(e,{$c:function(){return s},Ng:function(){return f},RR:function(){return u}});var r=n(1476),o=n(3707),i=n(7299);function a(t,e){return a=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},a(t,e)}var c={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"},u=function(t){var e,n;function r(e){return t.call(this,e)||this}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,a(e,n);var o=r.prototype;return o.shouldObfuscate=function(){return s(this.sharedContext.agentIdentifier).length>0},o.obfuscateString=function(t){if(!t||"string"!=typeof t)return t;for(var e=s(this.sharedContext.agentIdentifier),n=t,r=0;r<e.length;r++){var o=e[r].regex,i=e[r].replacement||"*";n=n.replace(o,i)}return n},r}(o.w);function s(t){var e=[],n=(0,r.Mt)(t,"obfuscate")||[];return e=e.concat(n),i.T.isFileProtocol()&&e.push(c),e}function f(t){for(var e=!1,n=!1,r=0;r<t.length;r++){"regex"in t[r]?"string"!=typeof t[r].regex&&t[r].regex.constructor!==RegExp&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),n=!0):(console&&console.warn&&console.warn('An obfuscation replacement rule was detected missing a "regex" value.'),n=!0);var o=t[r].replacement;o&&"string"!=typeof o&&(console&&console.warn&&console.warn('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),e=!0)}return!e&&!n}},1424:function(t,e,n){"use strict";n.d(e,{EZ:function(){return u},Qy:function(){return c},ce:function(){return o},fP:function(){return i},gG:function(){return s},mF:function(){return a}});var r=n(6959),o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function i(){return window.NREUM||(window.NREUM={}),void 0===window.newrelic&&(window.newrelic=window.NREUM),window.NREUM}function a(){var t=i();if(!t.o){var e=window,n=e.XMLHttpRequest;t.o={ST:setTimeout,SI:e.setImmediate,CT:clearTimeout,XHR:n,REQ:e.Request,EV:e.Event,PR:e.Promise,MO:e.MutationObserver,FETCH:e.fetch}}return t}function c(t,e,n){var o,a,c=i(),u=c.initializedAgents||{},s=u[t]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.zO)(),date:new Date}),c.initializedAgents=Object.assign({},u,((a={})[t]=Object.assign({},s,((o={})[n]=e,o)),a)),c}function u(t,e){i()[t]=e}function s(){var t,e;return t=i(),e=t.info||{},t.info=Object.assign({beacon:o.beacon,errorBeacon:o.errorBeacon},e),function(){var t=i(),e=t.init||{};t.init=Object.assign({},e)}(),a(),function(){var t=i(),e=t.loader_config||{};t.loader_config=Object.assign({},e)}(),i()}},8539:function(t){t.exports=function(t,e,n){e||(e=0),void 0===n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}}},r={};function o(t){var e=r[t];if(void 0!==e)return e.exports;var i=r[t]={exports:{}};return n[t](i,i.exports,o),i.exports}o.m=n,o.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return o.d(e,{a:e}),e},o.d=function(t,e){for(var n in e)o.o(e,n)&&!o.o(t,n)&&Object.defineProperty(t,n,{enumerable:!0,get:e[n]})},o.f={},o.e=function(t){return Promise.all(Object.keys(o.f).reduce((function(e,n){return o.f[n](t,e),e}),[]))},o.u=function(t){return t+"."+o.h().slice(0,8)+"-1220.js"},o.h=function(){return"2d6a2503b7f18a5b77dd"},o.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},t={},e="NRBA:",o.l=function(n,r,i,a){if(t[n])t[n].push(r);else{var c,u;if(void 0!==i)for(var s=document.getElementsByTagName("script"),f=0;f<s.length;f++){var d=s[f];if(d.getAttribute("src")==n||d.getAttribute("data-webpack")==e+i){c=d;break}}c||(u=!0,(c=document.createElement("script")).charset="utf-8",c.timeout=120,o.nc&&c.setAttribute("nonce",o.nc),c.setAttribute("data-webpack",e+i),c.src=n),t[n]=[r];var l=function(e,r){c.onerror=c.onload=null,clearTimeout(v);var o=t[n];if(delete t[n],c.parentNode&&c.parentNode.removeChild(c),o&&o.forEach((function(t){return t(r)})),e)return e(r)},v=setTimeout(l.bind(null,void 0,{type:"timeout",target:c}),12e4);c.onerror=l.bind(null,c.onerror),c.onload=l.bind(null,c.onload),u&&document.head.appendChild(c)}},o.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},o.p="https://js-agent.newrelic.com/",function(){var t={299:0,82:0};o.f.j=function(e,n){var r=o.o(t,e)?t[e]:void 0;if(0!==r)if(r)n.push(r[2]);else{var i=new Promise((function(n,o){r=t[e]=[n,o]}));n.push(r[2]=i);var a=o.p+o.u(e),c=new Error;o.l(a,(function(n){if(o.o(t,e)&&(0!==(r=t[e])&&(t[e]=void 0),r)){var i=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;c.message="Loading chunk "+e+" failed.\n("+i+": "+a+")",c.name="ChunkLoadError",c.type=i,c.request=a,r[1](c)}}),"chunk-"+e,e)}};var e=function(e,n){var r,i,a=n[0],c=n[1],u=n[2],s=0;if(a.some((function(e){return 0!==t[e]}))){for(r in c)o.o(c,r)&&(o.m[r]=c[r]);if(u)u(o)}for(e&&e(n);s<a.length;s++)i=a[s],o.o(t,i)&&t[i]&&t[i][0](),t[i]=0},n=self.webpackChunkNRBA=self.webpackChunkNRBA||[];n.forEach(e.bind(null,0)),n.push=e.bind(null,n.push.bind(n))}();var i={};return function(){"use strict";o.r(i);var t=o(9034),e=o(4408),n=window,r=n.document;function a(t){"complete"===r.readyState&&t()}function c(t){a(t),r.addEventListener?n.addEventListener("load",t,(0,e.m)(!1)):n.attachEvent("onload",t)}function u(t){a(t),r.addEventListener?r.addEventListener("DOMContentLoaded",t,(0,e.m)(!1)):r.attachEvent("onreadystatechange",a)}var s=o(1776);function f(){f=function(){return t};var t={},e=Object.prototype,n=e.hasOwnProperty,r="function"==typeof Symbol?Symbol:{},o=r.iterator||"@@iterator",i=r.asyncIterator||"@@asyncIterator",a=r.toStringTag||"@@toStringTag";function c(t,e,n){return Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}),t[e]}try{c({},"")}catch(t){c=function(t,e,n){return t[e]=n}}function u(t,e,n,r){var o=e&&e.prototype instanceof l?e:l,i=Object.create(o.prototype),a=new j(r||[]);return i._invoke=function(t,e,n){var r="suspendedStart";return function(o,i){if("executing"===r)throw new Error("Generator is already running");if("completed"===r){if("throw"===o)throw i;return P()}for(n.method=o,n.arg=i;;){var a=n.delegate;if(a){var c=x(a,n);if(c){if(c===d)continue;return c}}if("next"===n.method)n.sent=n._sent=n.arg;else if("throw"===n.method){if("suspendedStart"===r)throw r="completed",n.arg;n.dispatchException(n.arg)}else"return"===n.method&&n.abrupt("return",n.arg);r="executing";var u=s(t,e,n);if("normal"===u.type){if(r=n.done?"completed":"suspendedYield",u.arg===d)continue;return{value:u.arg,done:n.done}}"throw"===u.type&&(r="completed",n.method="throw",n.arg=u.arg)}}}(t,n,a),i}function s(t,e,n){try{return{type:"normal",arg:t.call(e,n)}}catch(t){return{type:"throw",arg:t}}}t.wrap=u;var d={};function l(){}function v(){}function p(){}var h={};c(h,o,(function(){return this}));var g=Object.getPrototypeOf,y=g&&g(g(_([])));y&&y!==e&&n.call(y,o)&&(h=y);var m=p.prototype=l.prototype=Object.create(h);function b(t){["next","throw","return"].forEach((function(e){c(t,e,(function(t){return this._invoke(e,t)}))}))}function w(t,e){function r(o,i,a,c){var u=s(t[o],t,i);if("throw"!==u.type){var f=u.arg,d=f.value;return d&&"object"==typeof d&&n.call(d,"__await")?e.resolve(d.__await).then((function(t){r("next",t,a,c)}),(function(t){r("throw",t,a,c)})):e.resolve(d).then((function(t){f.value=t,a(f)}),(function(t){return r("throw",t,a,c)}))}c(u.arg)}var o;this._invoke=function(t,n){function i(){return new e((function(e,o){r(t,n,e,o)}))}return o=o?o.then(i,i):i()}}function x(t,e){var n=t.iterator[e.method];if(void 0===n){if(e.delegate=null,"throw"===e.method){if(t.iterator.return&&(e.method="return",e.arg=void 0,x(t,e),"throw"===e.method))return d;e.method="throw",e.arg=new TypeError("The iterator does not provide a 'throw' method")}return d}var r=s(n,t.iterator,e.arg);if("throw"===r.type)return e.method="throw",e.arg=r.arg,e.delegate=null,d;var o=r.arg;return o?o.done?(e[t.resultName]=o.value,e.next=t.nextLoc,"return"!==e.method&&(e.method="next",e.arg=void 0),e.delegate=null,d):o:(e.method="throw",e.arg=new TypeError("iterator result is not an object"),e.delegate=null,d)}function O(t){var e={tryLoc:t[0]};1 in t&&(e.catchLoc=t[1]),2 in t&&(e.finallyLoc=t[2],e.afterLoc=t[3]),this.tryEntries.push(e)}function E(t){var e=t.completion||{};e.type="normal",delete e.arg,t.completion=e}function j(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(O,this),this.reset(!0)}function _(t){if(t){var e=t[o];if(e)return e.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,i=function e(){for(;++r<t.length;)if(n.call(t,r))return e.value=t[r],e.done=!1,e;return e.value=void 0,e.done=!0,e};return i.next=i}}return{next:P}}function P(){return{value:void 0,done:!0}}return v.prototype=p,c(m,"constructor",p),c(p,"constructor",v),v.displayName=c(p,a,"GeneratorFunction"),t.isGeneratorFunction=function(t){var e="function"==typeof t&&t.constructor;return!!e&&(e===v||"GeneratorFunction"===(e.displayName||e.name))},t.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,p):(t.__proto__=p,c(t,a,"GeneratorFunction")),t.prototype=Object.create(m),t},t.awrap=function(t){return{__await:t}},b(w.prototype),c(w.prototype,i,(function(){return this})),t.AsyncIterator=w,t.async=function(e,n,r,o,i){void 0===i&&(i=Promise);var a=new w(u(e,n,r,o),i);return t.isGeneratorFunction(n)?a:a.next().then((function(t){return t.done?t.value:a.next()}))},b(m),c(m,a,"Generator"),c(m,o,(function(){return this})),c(m,"toString",(function(){return"[object Generator]"})),t.keys=function(t){var e=[];for(var n in t)e.push(n);return e.reverse(),function n(){for(;e.length;){var r=e.pop();if(r in t)return n.value=r,n.done=!1,n}return n.done=!0,n}},t.values=_,j.prototype={constructor:j,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=void 0,this.done=!1,this.delegate=null,this.method="next",this.arg=void 0,this.tryEntries.forEach(E),!t)for(var e in this)"t"===e.charAt(0)&&n.call(this,e)&&!isNaN(+e.slice(1))&&(this[e]=void 0)},stop:function(){this.done=!0;var t=this.tryEntries[0].completion;if("throw"===t.type)throw t.arg;return this.rval},dispatchException:function(t){if(this.done)throw t;var e=this;function r(n,r){return a.type="throw",a.arg=t,e.next=n,r&&(e.method="next",e.arg=void 0),!!r}for(var o=this.tryEntries.length-1;o>=0;--o){var i=this.tryEntries[o],a=i.completion;if("root"===i.tryLoc)return r("end");if(i.tryLoc<=this.prev){var c=n.call(i,"catchLoc"),u=n.call(i,"finallyLoc");if(c&&u){if(this.prev<i.catchLoc)return r(i.catchLoc,!0);if(this.prev<i.finallyLoc)return r(i.finallyLoc)}else if(c){if(this.prev<i.catchLoc)return r(i.catchLoc,!0)}else{if(!u)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return r(i.finallyLoc)}}}},abrupt:function(t,e){for(var r=this.tryEntries.length-1;r>=0;--r){var o=this.tryEntries[r];if(o.tryLoc<=this.prev&&n.call(o,"finallyLoc")&&this.prev<o.finallyLoc){var i=o;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=e&&e<=i.finallyLoc&&(i=null);var a=i?i.completion:{};return a.type=t,a.arg=e,i?(this.method="next",this.next=i.finallyLoc,d):this.complete(a)},complete:function(t,e){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&e&&(this.next=e),d},finish:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.finallyLoc===t)return this.complete(n.completion,n.afterLoc),E(n),d}},catch:function(t){for(var e=this.tryEntries.length-1;e>=0;--e){var n=this.tryEntries[e];if(n.tryLoc===t){var r=n.completion;if("throw"===r.type){var o=r.arg;E(n)}return o}}throw new Error("illegal catch attempt")},delegateYield:function(t,e,n){return this.delegate={iterator:_(t),resultName:e,nextLoc:n},"next"===this.method&&(this.arg=void 0),d}},t}function d(t,e,n,r,o,i,a){try{var c=t[i](a),u=c.value}catch(t){return void n(t)}c.done?e(u):Promise.resolve(u).then(r,o)}var l=0;function v(t){var e;(e=f().mark((function e(){var n,r;return f().wrap((function(e){for(;;)switch(e.prev=e.next){case 0:if(!l++){e.next=2;break}return e.abrupt("return");case 2:return e.prev=2,e.next=5,o.e(552).then(o.bind(o,5552));case 5:return n=e.sent,r=n.aggregator,e.next=9,r(t);case 9:e.next=15;break;case 11:e.prev=11,e.t0=e.catch(2),console.error("Failed to successfully load all aggregators. Aborting...\n",e.t0),s.ee.abort();case 15:case"end":return e.stop()}}),e,null,[[2,11]])})),function(){var t=this,n=arguments;return new Promise((function(r,o){var i=e.apply(t,n);function a(t){d(i,r,o,a,c,"next",t)}function c(t){d(i,r,o,a,c,"throw",t)}a(void 0)}))})()}var p=o(8539),h=o.n(p),g=o(1424),y=o(1220),m=o(441),b=o(7361),w=o(357),x=o(6959);var O=o(1476),E=o(5955),j={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},_={};var P=!1;var A=o(6972),k=o(1793),L=o(5023);function S(t,e){return S=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},S(t,e)}var T,C,I,R=function(t){var e,n;function r(e){var n;return n=t.call(this,e)||this,(0,k.v)(e),(0,A.B)(e,"firstbyte",(0,x.yf)()),c((function(){return n.measureWindowLoaded()})),u((function(){return n.measureDomContentLoaded()})),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,S(e,n);var o=r.prototype;return o.measureWindowLoaded=function(){var t=(0,x.zO)();(0,A.B)(this.agentIdentifier,"onload",t+(0,x.os)()),(0,b.p)("timing",["load",t],void 0,void 0,this.ee)},o.measureDomContentLoaded=function(){(0,A.B)(this.agentIdentifier,"domContent",(0,x.zO)()+(0,x.os)())},r}(L.W);void 0!==document.hidden?(T="hidden",C="visibilitychange",I="visibilityState"):void 0!==document.msHidden?(T="msHidden",C="msvisibilitychange"):void 0!==document.webkitHidden&&(T="webkitHidden",C="webkitvisibilitychange",I="webkitVisibilityState");var M=o(2085);function N(t,e){return N=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},N(t,e)}var D=function(t){var n,r;function o(n){var r,o;if((r=t.call(this,n)||this).pageHiddenTime="hidden"===document.visibilityState?-1:1/0,r.performanceObserver,r.lcpPerformanceObserver,r.clsPerformanceObserver,r.fiRecorded=!1,!r.isEnabled())return function(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}(r);if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){r.performanceObserver=new PerformanceObserver((function(){var t;return(t=r).perfObserver.apply(t,arguments)}));try{r.performanceObserver.observe({entryTypes:["paint"]})}catch(t){}r.lcpPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).lcpObserver.apply(t,arguments)}));try{r.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(t){}r.clsPerformanceObserver=new PerformanceObserver((function(){var t;return(t=r).clsObserver.apply(t,arguments)}));try{r.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(t){}}if("addEventListener"in document){r.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((function(t){document.addEventListener(t,(function(){var t;return(t=r).captureInteraction.apply(t,arguments)}),(0,e.m)(!1))}))}return o=function(){var t;return(t=r).captureVisibilityChange.apply(t,arguments)},"addEventListener"in document&&C&&document.addEventListener(C,(function(){I&&document[I]?o(document[I]):document[T]?o("hidden"):o("visible")}),(0,e.m)(!1)),r}r=t,(n=o).prototype=Object.create(r.prototype),n.prototype.constructor=n,N(n,r);var i=o.prototype;return i.isEnabled=function(){return!1!==(0,O.Mt)(this.agentIdentifier,"page_view_timing.enabled")},i.perfObserver=function(t,e){var n=this;t.getEntries().forEach((function(t){"first-paint"===t.name?(0,b.p)("timing",["fp",Math.floor(t.startTime)],void 0,void 0,n.ee):"first-contentful-paint"===t.name&&(0,b.p)("timing",["fcp",Math.floor(t.startTime)],void 0,void 0,n.ee)}))},i.lcpObserver=function(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(this.pageHiddenTime<r.startTime)return;var o=[r],i=this.addConnectionAttributes({});i&&o.push(i),(0,b.p)("lcp",o,void 0,void 0,this.ee)}},i.clsObserver=function(t){var e=this;t.getEntries().forEach((function(t){t.hadRecentInput||(0,b.p)("cls",[t],void 0,void 0,e.ee)}))},i.addConnectionAttributes=function(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t},i.captureInteraction=function(t){if(t instanceof M.Y.EV&&!this.fiRecorded){var e=Math.round(t.timeStamp),n={type:t.type};this.addConnectionAttributes(n),e<=(0,x.zO)()?n.fid=(0,x.zO)()-e:e>(0,x.os)()&&e<=Date.now()?(e-=(0,x.os)(),n.fid=(0,x.zO)()-e):e=(0,x.zO)(),this.fiRecorded=!0,(0,b.p)("timing",["fi",e,n],void 0,void 0,this.ee)}},i.captureVisibilityChange=function(t){"hidden"===t&&(this.pageHiddenTime=(0,x.zO)(),(0,b.p)("pageHide",[this.pageHiddenTime],void 0,void 0,this.ee))},o}(L.W),q=o(3350),B="React",z="Angular",G="AngularJS",H="Backbone",F="Ember",V="Vue",Z="Meteor",U="Zepto",X="Jquery";function Q(){var t=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var t=document.querySelectorAll("body > div"),e=0;e<t.length;e++)if(Object.keys(t[e]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(t){return!1}})()&&t.push(B),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(t){return!1}}()&&t.push(G),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(t){return!1}}()&&t.push(z),window.Backbone&&t.push(H),window.Ember&&t.push(F),window.Vue&&t.push(V),window.Meteor&&t.push(Z),window.Zepto&&t.push(U),window.jQuery&&t.push(X)}catch(t){}return t}var W=o(7299),K=o(603),Y=o(158);function J(t,e){return J=Object.setPrototypeOf?Object.setPrototypeOf.bind():function(t,e){return t.__proto__=e,t},J(t,e)}var $=function(t){var e,n;function r(e){var n;return(n=t.call(this,e)||this).singleChecks(),(0,q.X)("record-supportability",(function(){var t;return(t=n).recordSupportability.apply(t,arguments)}),void 0,n.ee),(0,q.X)("record-custom",(function(){var t;return(t=n).recordCustom.apply(t,arguments)}),void 0,n.ee),n}n=t,(e=r).prototype=Object.create(n.prototype),e.prototype.constructor=e,J(e,n);var o=r.prototype;return o.recordSupportability=function(t,e){var n=["sm",t,{name:t},e];return(0,b.p)("storeMetric",n,null,void 0,this.ee),n},o.recordCustom=function(t,e){var n=["cm",t,{name:t},e];return(0,b.p)("storeEventMetrics",n,null,void 0,this.ee),n},o.singleChecks=function(){var t=this;this.recordSupportability("Generic/Version/"+Y.q+"/Detected"),u((function(){Q().forEach((function(e){t.recordSupportability("Framework/"+e+"/Detected")}))})),W.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),W.T.supportabilityMetricSent=!0);var e=(0,K.$c)(this.agentIdentifier);e.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),e.length>0&&!(0,K.Ng)(e)&&this.recordSupportability("Generic/Obfuscate/Invalid")},r}(L.W),tt=o(847);new Promise((function(e,n){if(P)e(P);else{var r=(0,g.gG)();try{(0,m.L)(t.Z,r.info),(0,O.Dg)(t.Z,r.init),function(t,e){if(!t)throw new Error("All loader-config objects require an agent identifier!");_[t]=new E.I(e,j),(0,g.Qy)(t,_[t],"loader_config")}(t.Z,r.loader_config),(0,y.s)(t.Z,{}),function(t){var e=(0,g.fP)(),n=s.ee.get(t),r=n.get("tracer"),o="api-",i="api-ixn-";function a(){}(0,w.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(t,n){e[n]=u(o,n,!0,"api")})),e.addPageAction=u(o,"addPageAction",!0),e.setCurrentRouteName=u(o,"routeName",!0),e.setPageViewName=function(e,n){if("string"==typeof e)return"/"!==e.charAt(0)&&(e="/"+e),(0,y.O)(t).customTransaction=(n||"http://custom.transaction")+e,u(o,"setPageViewName",!0,"api")()},e.setCustomAttribute=function(e,n){var r,i=(0,m.C)(t);return(0,m.L)(t,Object.assign({},i,{jsAttributes:Object.assign({},i.jsAttributes,(r={},r[e]=n,r))})),u(o,"setCustomAttribute",!0,"api")()},e.interaction=function(){return(new a).get()};var c=a.prototype={createTracer:function(t,e){var o={},i=this,a="function"==typeof e;return(0,b.p)("api-ixn-tracer",[(0,x.zO)(),t,o],i,void 0,n),function(){if(r.emit((a?"":"no-")+"fn-start",[(0,x.zO)(),i,a],o),a)try{return e.apply(this,arguments)}catch(t){throw r.emit("fn-err",[arguments,this,"string"==typeof t?new Error(t):t],o),t}finally{r.emit("fn-end",[(0,x.zO)()],o)}}}};function u(t,e,r,o){return function(){return(0,b.p)("record-supportability",["API/"+e+"/called"],void 0,void 0,n),(0,b.p)(t+e,[(0,x.zO)()].concat(h()(arguments)),r?null:this,o,n),r?void 0:this}}(0,w.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(t,e){c[e]=u(i,e)})),e.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),(0,b.p)("record-supportability",["API/noticeError/called"],void 0,void 0,n),(0,b.p)("err",[t,(0,x.zO)(),!1,e],void 0,void 0,n)}}(t.Z),e(P=!0)}catch(t){n(t)}}})).then((function(){var e,n,r,o=(0,tt.K)(t.Z);o.page_view_event&&new R(t.Z),o.page_view_timing&&new D(t.Z),o.metrics&&new $(t.Z),e="lite",n?setTimeout((function(){return v(e)}),r||1e3):c((function(){return v(e)}))}))}(),i}()}));</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/css/bootstrap/bootstrap-grid-modal.min.css?ver=4.6.2" type="text/css"/>
+    <link rel="stylesheet" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/css/style.min.css?ver=1610241983" type="text/css"/>
+    <link rel="stylesheet" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/css/fonts.min.css?ver=1610241983" type="text/css"/>
+    <link rel="pingback" href="https://endpts.com/xmlrpc.php">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/apple-touch-icon.png?v=OmJxx0N8zQ">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/favicon-32x32.png?v=OmJxx0N8zQ">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/favicon-16x16.png?v=OmJxx0N8zQ">
+    <link rel="manifest" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/site.webmanifest?v=OmJxx0N8zQ">
+    <link rel="mask-icon" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/safari-pinned-tab.svg?v=OmJxx0N8zQ" color="#494949">
+    <link rel="shortcut icon" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/favicon.ico?v=OmJxx0N8zQ">
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/IvarText_Regular.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/IvarText_Bold.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/IvarText_Italic.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/IvarHeadline_SemiBold.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/Concourse_T4_Bold.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/Concourse_T4_Italic.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/Concourse_C4_Bold.woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="https://endpts.com/wp-content/themes/endpoints-rakia/assets/fonts/Concourse_C4_Regular.woff2" as="font" crossorigin="anonymous"/>
+    <meta name="msapplication-TileColor" content="#bb9451">
+    <meta name="msapplication-config" content="https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/favicon/browserconfig.xml?v=OmJxx0N8zQ">
+    <meta name="theme-color" content="#ffffff">
+    <title>Updated: US puts hold on F-star&#8217;s takeover by China’s Sino Biopharm, citing national security risks &#8211; Endpoints News</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//cdn.parsely.com' />
+<link rel='dns-prefetch' href='//www.googletagservices.com' />
+<link rel="alternate" type="application/rss+xml" title="Endpoints News &raquo; Feed" href="https://endpts.com/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/endpts.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='classic-theme-styles-css' href='https://endpts.com/wp-includes/css/classic-themes.min.css?ver=1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='EP_css-css' href='https://endpts.com/wp-content/plugins/endpoints/assets/css/endpoints.min.css?ver=1403438354' media='all' />
+<link rel="https://api.w.org/" href="https://endpts.com/wp-json/" /><link rel="alternate" type="application/json" href="https://endpts.com/wp-json/wp/v2/posts/388594" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://endpts.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://endpts.com/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel="canonical" href="https://endpts.com/us-blocks-f-stars-takeover-citing-national-security-risks/" />
+<link rel='shortlink' href='https://endpts.com/?p=388594' />
+<link rel="alternate" type="application/json+oembed" href="https://endpts.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fendpts.com%2Fus-blocks-f-stars-takeover-citing-national-security-risks%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://endpts.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fendpts.com%2Fus-blocks-f-stars-takeover-citing-national-security-risks%2F&#038;format=xml" />
+<meta property="og:image" content="https://endpts.com/wp-content/uploads/2022/12/Eliot-Forster-F-star-EUBIO-social.jpg" /><meta property="twitter:image" content="https://endpts.com/wp-content/uploads/2022/12/Eliot-Forster-F-star-EUBIO-social.jpg" /><meta property="og:description" content="F-star Therapeutics won't yet be able to close its deal with its Chinese buyer, after the US government's Committee on Foreign Investment in the United States panel put a hold on the takeover, citing national security risks. China's Sino Biopharm made a $161 million deal with F-star in June, seeking" /><meta property="og:title" content="Updated: US puts hold on F-star's takeover by China’s Sino Biopharm, citing national security risks" /><meta property="og:url" content="https://endpts.com/us-blocks-f-stars-takeover-citing-national-security-risks/" /><meta property="og:site_name" content="Endpoints News" /><meta property="og:type" content="article" /><meta property="article:section" content="Business & Health" /><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@endpts"><meta name="googlebot" content="noarchive"><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"NewsArticle","headline":"Updated: US puts hold on F-star's takeover by China\u2019s Sino Biopharm, citing national security risks","image":"https:\/\/endpts.com\/wp-content\/uploads\/2022\/12\/Eliot-Forster-F-star-EUBIO-social.jpg","url":"https:\/\/endpts.com\/us-blocks-f-stars-takeover-citing-national-security-risks\/","copyrightYear":"2022","keywords":["Deals","China"],"datePublished":"2022-12-29T15:31:17+00:00","dateModified":"2022-12-30T18:01:31+00:00","author":[{"name":"Drew Armstrong","jobTitle":"Executive Editor","url":"https:\/\/endpts.com\/author\/drew-armstrong\/","@type":"Person","image":"https:\/\/endpts.com\/wp-content\/uploads\/2022\/11\/drew-armstrong.jpg"}],"publisher":{"@type":"Organization","name":"Endpoints News","url":"https:\/\/endpts.com","sameAs":["https:\/\/twitter.com\/endpts","https:\/\/www.linkedin.com\/company\/endpoints\/","https:\/\/facebook.com\/endpoints"],"logo":{"@type":"imageObject","url":"https:\/\/endpts.com\/wp-content\/themes\/endpoints-rakia\/assets\/images\/endpoints_news.png"},"foundingDate":"2016-06-20"},"copyrightHolder":{"@type":"Organization","name":"Endpoints News","url":"https:\/\/endpts.com","sameAs":["https:\/\/twitter.com\/endpts","https:\/\/www.linkedin.com\/company\/endpoints\/","https:\/\/facebook.com\/endpoints"],"logo":{"@type":"imageObject","url":"https:\/\/endpts.com\/wp-content\/themes\/endpoints-rakia\/assets\/images\/endpoints_news.png"},"foundingDate":"2016-06-20"},"mainEntityOfPage":"https:\/\/endpts.com\/us-blocks-f-stars-takeover-citing-national-security-risks\/","articleSection":["Deals","China"],"articleBody":"F-star Therapeutics won&#8217;t yet be able to close its deal with its Chinese buyer, after the US government&#8217;s Committee on Foreign Investment in the United States panel put a hold on the takeover, citing national security risks.\nChina&#8217;s Sino Biopharm made a $161 million deal with F-star in June, seeking to buy its bispecific antibody platform. The deal was being done via Sino&#8217;s invoX unit, a subsidiary meant to help the Hong Kong-based company expand outside of China. That deal now appears to be at least temporarily blocked, given the US&#8217; order.\nIn a filing with the SEC, F-star said the CFIUS panel had &#8220;issued an order (the \u201cInterim Order\u201d) preventing the consummation of the transactions pursuant to the Merger Agreement, citing unresolved national security risks.&#8221; The order will stay in place to &#8220;provide CFIUS adequate opportunity to continue its review and investigation.&#8221;\nIn a statement, invoX said the companies were working with CFIUS and still planned to close their deal.\n\u201cWe are seeking to move swiftly to ensure F-star has the financing it needs to maintain potentially life saving work on cancer clinical trials, while avoiding extensive layoffs,&#8221; invoX said in a statement. &#8220;Through our engagement with CFIUS staff, we understand that the Committee has determined that any national security concerns can be mitigated and will work expeditiously to reach a resolution.\u201d\nIn November, F-star and Sino Biopharm announced that a review by the foreign investments panel would have to push out their target for closing the deal. In a filing Friday, the companies extended their deadline to close the merger to the end of January.\nF-star&#8217;s shares plunged 34% in trading on Thursday, a sign of investors&#8217; skepticism about the takeover. The US government has used CFIUS as a way of scrutinizing China&#8217;s attempts to expand its life sciences industry and to guard technologies developed in the US.\nJohn Fraunces, an outside representative for F-star, declined to comment further.\nEditor&#8217;s note: This story was updated on Dec. 30 with a comment from Sino Biopharm&#8217;s invoX unit.\n"}</script>    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9QWNX9N9E5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag()
+        {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('set', 'user_properties', {
+          user_type: 'Guest',
+        });
+        gtag('config', 'G-9QWNX9N9E5');
+        _linkedin_partner_id = "2273916";
+        window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+        window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+                (function (w, d, s, l, i)
+        {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=jln1n8tT5GwrRWy9brO0TQ&gtm_preview=env-1&gtm_cookies_win=x';
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KC2PBM2');
+            </script>
+</head>
+<body class="post-template-default single single-post postid-388594">
+<header class="epn_header_menu">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-2">
+                <a href="/" class="epn_logo">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 288 22" style="enable-background:new 0 0 288 22;" xml:space="preserve">
+<g>
+    <path class="epn_svg_logo" d="M14.69,5.23H5.34v3.64h7.43v4.24H5.34v3.65h9.65v4.6H0V0.63h14.69V5.23z"></path>
+    <path class="epn_svg_logo" d="M35.21,12.38h0.21V0.63h5.34v20.73h-3.41L26.18,9.58h-0.21v11.78h-5.34V0.63h3.41L35.21,12.38z"></path>
+    <path class="epn_svg_logo" d="M46.8,21.37V0.63h7.35c6.12,0,10.92,4.15,10.92,10.39c0,6.61-4.56,10.35-10.88,10.35H46.8z M54.56,16.77
+		c2.91,0,5.05-2.14,5.05-5.83c0-3.57-2.79-5.71-5.09-5.71h-2.38v11.54H54.56z"></path>
+    <path class="epn_svg_logo" d="M77.45,14.26h-2.13v7.1h-5.34V0.63h7.63c4.72,0,8.04,2.71,8.04,7.18C85.66,10.61,83.65,14.26,77.45,14.26z
+		 M77.04,5.03h-1.72v5.13h1.85c1.64,0,2.79-0.86,2.79-2.46C79.95,6.22,78.84,5.03,77.04,5.03z"></path>
+    <path class="epn_svg_logo" d="M100.25,21.78c-6.49,0-11.12-4.68-11.12-10.67c0-6.61,5.34-10.88,11.12-10.88c5.66,0,11.04,4.15,11.04,10.88
+		C111.29,16.93,106.94,21.78,100.25,21.78z M100.21,4.9c-2.83,0-5.58,2.22-5.58,6.12c0,3.16,1.93,6.08,5.71,6.08
+		c3.04,0,5.5-2.26,5.5-6.08C105.83,7.37,103.25,4.9,100.21,4.9z"></path>
+    <path class="epn_svg_logo" d="M121.84,21.37h-5.34V0.63h5.34V21.37z"></path>
+    <path class="epn_svg_logo" d="M142.56,12.38h0.21V0.63h5.34v20.73h-3.41L133.53,9.58h-0.21v11.78h-5.34V0.63h3.41L142.56,12.38z"></path>
+    <path class="epn_svg_logo" d="M163.91,5.23v16.13h-5.34V5.23h-6.24v-4.6h17.81v4.6H163.91z"></path>
+    <path class="epn_svg_logo" d="M174.98,15.09c1.81,1.15,4.23,2.18,6.61,2.18c1.93,0,2.71-0.86,2.71-1.68c0-1.23-1.36-1.72-4.02-2.96
+		c-4.19-1.97-5.95-3.49-5.95-6.45s2.5-5.95,7.63-5.95c2.87,0,5.42,0.78,7.31,1.97l-1.23,4.27c-2.09-1.11-4.1-1.72-6.03-1.72
+		c-1.56,0-2.26,0.66-2.26,1.44c0,0.86,0.86,1.36,4.06,2.83c4.52,2.09,6.03,3.98,6.03,6.82c0,3.9-3.53,5.95-8.5,5.95
+		c-3.57,0-6.61-1.23-7.84-2.38L174.98,15.09z"></path>
+    <path class="epn_svg_text" d="M214.24,18.33l0.12-0.08V0.84h1.64v20.53l-0.94,0.21L200.04,3.92l-0.12,0.04v17.41h-1.64V0.84l0.94-0.21
+		L214.24,18.33z"></path>
+    <path class="epn_svg_text" d="M236.72,2.32h-11.45v7.84h10.22v1.48h-10.22v8.25h11.86v1.48h-13.5V0.84h13.09V2.32z"></path>
+    <path class="st0" d="M255.6,4.99l-5.66,16.59h-0.41l-7.96-20.32l1.6-0.62l6.44,16.91h0.21l5.62-16.91h0.41l5.87,16.91h0.21
+		l6.16-16.91l1.64,0.62l-7.84,20.32h-0.41l-5.71-16.59H255.6z"></path>
+    <path class="epn_svg_text" d="M274.13,17.84c1.56,1.4,3.94,2.42,6.69,2.42c3.94,0,5.46-1.85,5.46-3.86c0-2.14-1.72-3.53-5.38-4.97
+		c-4.93-1.89-6.69-3.33-6.69-5.95c0-2.5,2.18-5.05,6.36-5.05c2.87,0,5.58,1.35,6.98,2.67l-0.94,1.23c-1.72-1.4-3.53-2.38-6.03-2.38
+		c-3.08,0-4.64,1.6-4.64,3.41c0,1.93,1.15,2.87,5.62,4.64c4.76,1.89,6.44,3.78,6.44,6.36c0,2.92-2.18,5.42-7.22,5.42
+		c-3.32,0-6.36-1.31-7.59-2.63L274.13,17.84z"></path>
+</g>
+</svg>
+                </a>
+            </div>
+            <div class="col-2 d-md-none">
+                <a href="#" class="epn_hamburger"><span></span><span></span><span></span></a>
+            </div>
+            <nav class="col-8 col-md epn_menu_container">
+                <div class="epn_menu">
+    <ul>
+        <li class="menu-item-has-children">
+            <span>Channels</span>
+            <ul>
+                <li>
+                    <a href="/news/" title="See latest news">All News</a>
+                </li>
+                <li>
+                    <a href="/premium" title="Premium Content">Premium Content</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/in-focus/" title="See Latest Stories in In Focus">In Focus</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/special/" title="See Latest Stories in Special Channel">Special</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/ai/" title="See Latest Stories in AI Channel">AI</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/bioregnum/" title="See Latest Stories in Bioregnum Channel">Bioregnum</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/biotech-voices/" title="See Latest Stories in Biotech Voices Channel">Biotech Voices</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/cell-gene-tx/" title="See Latest Stories in Cell/Gene Tx Channel">Cell/Gene Tx</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/china/" title="See Latest Stories in China Channel">China</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/coronavirus/" title="See Latest Stories in Coronavirus Channel">Coronavirus</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/deals/" title="See Latest Stories in Deals Channel">Deals</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/diagnostics/" title="See Latest Stories in Diagnostics Channel">Diagnostics</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/discovery/" title="See Latest Stories in Discovery Channel">Discovery</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/fda-plus/" title="See Latest Stories in FDA+ Channel">FDA+</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/financing/" title="See Latest Stories in Financing Channel">Financing</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/law/" title="See Latest Stories in Law Channel">Law</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/letters-to-the-editor/" title="See Latest Stories in Letters to the Editor Channel">Letters to the Editor</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/manufacturing/" title="See Latest Stories in Manufacturing Channel">Manufacturing</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/marketing/" title="See Latest Stories in Marketing Channel">Marketing</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/opinion/" title="See Latest Stories in Opinion Channel">Opinion</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/outsourcing/" title="See Latest Stories in Outsourcing Channel">Outsourcing</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/peer-review/" title="See Latest Stories in Peer Review Channel">Peer Review</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/people/" title="See Latest Stories in People Channel">People</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/pharma/" title="See Latest Stories in Pharma Channel">Pharma</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/rd/" title="See Latest Stories in R&amp;D Channel">R&amp;D</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/startups/" title="See Latest Stories in Startups Channel">Startups</a>
+                </li>
+                <li>
+                    <a href="https://endpts.com/channel/weekly/" title="See Latest Stories in Weekly Channel">Weekly</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="https://webinars.endpts.com" title="Endpoints Webinars" target="_blank">Webinars</a>
+        </li>
+        <li>
+            <a href="https://careers.endpts.com" title="Endpoints Careers" target="_blank">Biopharma Jobs</a>
+        </li>
+        <li class="menu-item-has-children">
+            <span>More</span>
+            <ul>
+                <li><a href="http://endpoints-news.rippling-ats.com/" rel="nofollow noopener" target="_blank" title="Work at Endpoints">Work at Endpoints</a></li>
+                <li><a href="https://endpts.com/letter-to-editors/" target="_blank" title="Letter to Editors">Letter to Editors</a></li>
+                <li><a href="https://endpts.com/ipo-tracker/" target="_blank" title="Endpoints News IPO Tracker">IPO Tracker</a></li>
+                <li><a href="https://webinars.endpts.com/" target="_blank" title="Endpoints Webinars">Webinars</a></li>
+                <li><a href="https://endpoints.studio/events/" title="Endpoints Events" target="_blank">Events</a></li>
+                <li><a href="https://endpts.com/sponsored/" title="See all Sponsored Posts">Sponsored Posts</a></li>
+                <li><a href="https://endpoints.studio" target="_blank" title="Endpoints Studio">Advertise</a></li>
+                <li><a href="https://www.iubenda.com/privacy-policy/286978" rel="nofollow noopener" target="_blank">Privacy Policy</a></li>
+                <li><a href="https://store.endpts.com" target="_blank">Endpoints Merch</a></li>
+                <li><a href="https://endpts.com/about-endpoints-news/" title="About Endpoints News">About Us</a></li>
+                <li><span data-intercom-open >Help</span></li>
+            </ul>
+        </li>
+    </ul>
+    <div class="epn_search_bar">
+        <form action="https://endpts.com/">
+            <input type="text" name="s" placeholder="Search">
+            <button class="epn_ux_button epn_white epn_search_submit_button"></button>
+        </form>
+        <button class="epn_ux_button epn_white epn_search_button"></button>
+    </div>
+</div>
+
+            </nav>
+            <div class="col-8 col-md-2 epn_profile">
+    <div class="epn_user epn_logged_out">
+        <ul>
+            <li><a href="https://endpts.com/subscribe/" class="epn_navigation_sign_up_button" title="Subscribe to Endpoints News">SIGN UP</a></li>
+            <li>
+                <button data-toggle="modal" class="epn_navigation_log_in_button" data-target="#epn_sign_in_modal">LOG IN</button>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+    </div>
+</header><div class="epn_body_bg epn_ad_after_header_wrapper"><section class="epn_ad_wrapper epn_regular_section epn_ads_full_width"><div class="container"><div class="row"><div class="col-8"><div id="rakia_above_articles" data-slot="/21729248569/rakia_banner_above_articles"></div></div></div></div></section></div><section class="sidebar_limit"></section>
+<section class="epn_article_body epn_regular_section infinite-scroll epn_body_next_to_sidebar">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-6 epn_is_stream">
+                <article class="epn_regular_section epn_white_box " data-aid="NOR4ek/i">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/12/Eliot-Forster-F-star-EUBIO-tile.jpg">
+    <div class="epn_description"><span>F-star Therapeutics CEO Eliot Forster at EUBIO22 (Rachel Kiki for Endpoints News)</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/us-blocks-f-stars-takeover-citing-national-security-risks/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/us-blocks-f-stars-takeover-citing-national-security-risks/&title=Updated%3A%20US%20puts%20hold%20on%20F-star%27s%20takeover%20by%20China%E2%80%99s%20Sino%20Biopharm%2C%20citing%20national%20security%20risks&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Updated%3A%20US%20puts%20hold%20on%20F-star%27s%20takeover%20by%20China%E2%80%99s%20Sino%20Biopharm%2C%20citing%20national%20security%20risks - https://endpts.com/us-blocks-f-stars-takeover-citing-national-security-risks/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 29, 2022 10:31 AM EST<span class="epn_time_updated">Updated December 30, 01:01 PM</span></div>
+    <div class="epn_channel channel-deals"><a href="https://endpts.com/channel/deals/" title="Channel: Deals"><span>Deals</span></a></div><div class="epn_channel channel-china"><a href="https://endpts.com/channel/china/" title="Channel: China"><span>China</span></a></div>
+</div>
+        
+        <h1>Up&shy;dat&shy;ed: US puts hold on F-star's takeover by Chi&shy;na’s Sino Bio&shy;pharm, cit&shy;ing na&shy;tion&shy;al se&shy;cu&shy;ri&shy;ty risks</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/11/drew-armstrong.jpg');"></div>
+    <div class="epn_text">
+        <h3>Drew Armstrong</h3>
+        <h4>Executive Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>F-star Ther&shy;a&shy;peu&shy;tics won&rsquo;t yet be able to close its deal with its Chi&shy;nese buy&shy;er, af&shy;ter the US gov&shy;ern&shy;ment&rsquo;s Com&shy;mit&shy;tee on For&shy;eign In&shy;vest&shy;ment in the Unit&shy;ed States pan&shy;el put a hold on the takeover, cit&shy;ing na&shy;tion&shy;al se&shy;cu&shy;ri&shy;ty risks.</p>
+<p>Chi&shy;na&rsquo;s Sino Bio&shy;pharm <a href="https://investors.f-star.com/news-releases/news-release-details/invox-pharma-acquire-f-star-therapeutics-inc-pioneering-next" target="_blank" rel="nofollow noopener">made a $161 mil&shy;lion deal</a> with F-star in June, seek&shy;ing to buy its bis&shy;pe&shy;cif&shy;ic an&shy;ti&shy;body plat&shy;form. The deal was be&shy;ing done via Sino&rsquo;s in&shy;voX unit, a sub&shy;sidiary meant to help the Hong Kong-based com&shy;pa&shy;ny ex&shy;pand out&shy;side of Chi&shy;na. That deal now ap&shy;pears to be at least tem&shy;porar&shy;i&shy;ly blocked, giv&shy;en the US&rsquo; or&shy;der.</p>
+<p>In a <a href="https://www.sec.gov/ix?doc=/Archives/edgar/data/0001566373/000119312522314185/d421497d8k.htm" target="_blank" rel="nofollow noopener">fil&shy;ing with the SEC</a>, F-star said the CFIUS pan&shy;el had &ldquo;is&shy;sued an or&shy;der (the &ldquo;In&shy;ter&shy;im Or&shy;der&rdquo;) pre&shy;vent&shy;ing the con&shy;sum&shy;ma&shy;tion of the trans&shy;ac&shy;tions pur&shy;suant to the Merg&shy;er Agree&shy;ment, cit&shy;ing un&shy;re&shy;solved na&shy;tion&shy;al se&shy;cu&shy;ri&shy;ty risks.&rdquo; The or&shy;der will stay in place to &ldquo;pro&shy;vide CFIUS ad&shy;e&shy;quate op&shy;por&shy;tu&shy;ni&shy;ty to con&shy;tin&shy;ue its re&shy;view and in&shy;ves&shy;ti&shy;ga&shy;tion.&rdquo;</p><div class="epn_ad_wrapper"><div class="epn_article_ad" id="rakia_within_article_1053383866" data-slot="/21729248569/rakia_within_article"></div></div>
+<p>In a state&shy;ment, in&shy;voX said the com&shy;pa&shy;nies were work&shy;ing with CFIUS and still planned to close their deal.</p>
+<p>&ldquo;We are seek&shy;ing to move swift&shy;ly to en&shy;sure F-star has the fi&shy;nanc&shy;ing it needs to main&shy;tain po&shy;ten&shy;tial&shy;ly life sav&shy;ing work on can&shy;cer clin&shy;i&shy;cal tri&shy;als, while avoid&shy;ing ex&shy;ten&shy;sive lay&shy;offs,&rdquo; in&shy;voX said in a state&shy;ment. &ldquo;Through our en&shy;gage&shy;ment with CFIUS staff, we un&shy;der&shy;stand that the Com&shy;mit&shy;tee has de&shy;ter&shy;mined that any na&shy;tion&shy;al se&shy;cu&shy;ri&shy;ty con&shy;cerns can be mit&shy;i&shy;gat&shy;ed and will work ex&shy;pe&shy;di&shy;tious&shy;ly to reach a res&shy;o&shy;lu&shy;tion.&rdquo;</p>
+<p>In No&shy;vem&shy;ber, F-star and Sino Bio&shy;pharm <a href="https://endpts.com/cfius-review-triggers-delay-on-i-o-biotechs-sale-to-chinese-player/">an&shy;nounced</a> that a re&shy;view by the for&shy;eign in&shy;vest&shy;ments pan&shy;el would have to push out their tar&shy;get for clos&shy;ing the deal. In a fil&shy;ing Fri&shy;day, the com&shy;pa&shy;nies ex&shy;tend&shy;ed their dead&shy;line to close the merg&shy;er to the end of Jan&shy;u&shy;ary.</p>
+<p>F-star&rsquo;s shares plunged 34% in trad&shy;ing on Thurs&shy;day, a sign of in&shy;vestors&rsquo; skep&shy;ti&shy;cism about the takeover. The US gov&shy;ern&shy;ment has used CFIUS as a way of scru&shy;ti&shy;niz&shy;ing Chi&shy;na&rsquo;s at&shy;tempts to ex&shy;pand its life sci&shy;ences in&shy;dus&shy;try and to guard tech&shy;nolo&shy;gies de&shy;vel&shy;oped in the US.</p>
+<p>John Fraunces, an out&shy;side rep&shy;re&shy;sen&shy;ta&shy;tive for F-star, de&shy;clined to com&shy;ment fur&shy;ther.</p>
+<p><em>Ed&shy;i&shy;tor&rsquo;s note: This sto&shy;ry was up&shy;dat&shy;ed on Dec. 30 with a com&shy;ment from Sino Bio&shy;pharm&rsquo;s in&shy;voX unit.</em></p>
+
+
+<div class="epn_tag_box">
+    
+</div>
+
+<div class="epn_author_box">
+    <h3 class="epn_section_title">AUTHOR</h3>
+    <div class="single_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/11/drew-armstrong.jpg');"></div>
+    <div class="epn_text">
+        <h3><a href="https://endpts.com/author/drew-armstrong/" title="See all stories by Drew Armstrong">Drew Armstrong</a></h3>
+        <h4>Executive Editor</h4>
+        <div class="epn_social">
+            <div class="epn_left">
+                <a href="mailto:drew@endpointsnews.com" class="epn_mail">drew@endpointsnews.com</a>
+                <a href="https://twitter.com/ArmstrongDrew" title="Find Drew Armstrong on Twitter" rel="nofollow noopener" target="_blank" class="epn_twitter">@ArmstrongDrew</a>
+            </div>
+            <div class="epn_right">
+                <a href="https://www.linkedin.com/in/drew-armstrong-health/" title="Find Drew Armstrong on LinkedIn"  rel="nofollow noopener" target="_blank" class="epn_linkedin">Drew Armstrong on LinkedIn</a>
+                
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+</article>
+            <article class="epn_regular_section epn_white_box epn_sponsored_article" data-aid="NOR3e07h">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/12/Image-26-1800x8002-1-1.jpg">
+    
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/sp/a-new-era-of-collaboration-promises-to-deliver-more-value-for-patients/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/sp/a-new-era-of-collaboration-promises-to-deliver-more-value-for-patients/&title=A%20New%20Era%20of%20Collaboration%20Promises%20to%20Deliver%20More%20Value%20for%20Patients&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=A%20New%20Era%20of%20Collaboration%20Promises%20to%20Deliver%20More%20Value%20for%20Patients - https://endpts.com/sp/a-new-era-of-collaboration-promises-to-deliver-more-value-for-patients/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    <div class="epn_section_title epn_text_color_yellow-dark"><span>SPONSORED</span></div>
+    <div class="epn_time">January 2, 2023 06:00 AM EST</div>
+    
+</div>
+        
+        <h1>A New Era of Col&shy;lab&shy;o&shy;ra&shy;tion Promis&shy;es to De&shy;liv&shy;er More Val&shy;ue for Pa&shy;tients</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/12/Untitled-design-13.png');"></div>
+    <div class="epn_text">
+        <h3>Astellas Pharma Inc.</h3>
+        
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p><em>As life science executives from around the world head to San Francisco this January for the premier week in healthcare partnering, Issei Tsukamoto, Head of Business Development, Mike Luther, Head of Search &amp; Evaluation, and Chieko Mori, Head of Transactions, from Astellas share their perspectives on how partnering approaches need to change to meet the challenges of a rapidly evolving industry. Additional insights are provided by Gary Starling, Chief Scientific Officer of Xyphos Biosciences, a biotechnology company that is advancing the development of a novel, flexible cancer cell therapy platform, and was acquired by Astellas in 2019. </em></p>
+
+<div class="epn_more">
+    <button type="button" class="epn_ux_button epn_more">Read More</button>
+</div>
+
+        </div>
+    </div>
+</article>
+            <article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR4ekPv">
+    
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/pfizer-releases-hemophilia-b-phiii-data-in-challenge-to-csls-hemgenix/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/pfizer-releases-hemophilia-b-phiii-data-in-challenge-to-csls-hemgenix/&title=Pfizer%20releases%20hemophilia%20B%20PhIII%20data%20in%20challenge%20to%20CSL%27s%20Hemgenix&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Pfizer%20releases%20hemophilia%20B%20PhIII%20data%20in%20challenge%20to%20CSL%27s%20Hemgenix - https://endpts.com/pfizer-releases-hemophilia-b-phiii-data-in-challenge-to-csls-hemgenix/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 29, 2022 06:45 AM EST<span class="epn_time_updated">Updated 08:20 AM</span></div>
+    <div class="epn_channel channel-rd"><a href="https://endpts.com/channel/rd/" title="Channel: R&amp;D"><span>R&amp;D</span></a></div>
+</div>
+        
+        <h1>Pfiz&shy;er re&shy;leas&shy;es he&shy;mo&shy;phil&shy;ia B PhI&shy;II da&shy;ta in chal&shy;lenge to CSL's Hem&shy;genix</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/11/drew-armstrong.jpg');"></div>
+    <div class="epn_text">
+        <h3>Drew Armstrong</h3>
+        <h4>Executive Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Pfizer&rsquo;s hemophilia B gene therapy showed strong results in a Phase III trial, sharply reducing the rate of bleeding in patients and drastically cutting their reliance on the costly injections that are the current standard of care.</p>
+<p>The company said it plans to discuss the data with regulators early next year, and if the FDA does eventually approve the treatment, it could present a challenge to CSL Behring&rsquo;s gene therapy Hemgenix, which was approved for use on Nov. 22.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,900+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><section class="epn_regular_section epn_instream_ad epn_ad_wrapper"><div id="rakia_in_stream_3940492655" data-slot="/21729248569/rakia_instream"></div></section><article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR4fU7h">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/06/David-Rind-tile-ICER.jpg">
+    <div class="epn_description"><span>David Rind, ICER CMO</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/icer-on-alzheimers-lecanemab-should-be-priced-lower-than-aduhelm/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/icer-on-alzheimers-lecanemab-should-be-priced-lower-than-aduhelm/&title=Updated%3A%20ICER%20on%20Alzheimer%27s%3A%20lecanemab%20should%20be%20priced%20lower%20than%20Aduhelm&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Updated%3A%20ICER%20on%20Alzheimer%27s%3A%20lecanemab%20should%20be%20priced%20lower%20than%20Aduhelm - https://endpts.com/icer-on-alzheimers-lecanemab-should-be-priced-lower-than-aduhelm/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 22, 2022 09:15 AM EST<span class="epn_time_updated">Updated 10:57 AM</span></div>
+    <div class="epn_channel channel-pharma"><a href="https://endpts.com/channel/pharma/" title="Channel: Pharma"><span>Pharma</span></a></div>
+</div>
+        
+        <h1>Up&shy;dat&shy;ed: ICER on Alzheimer's: lecanemab should be priced low&shy;er than Aduhelm</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/07/lei-lei-wu.jpg');"></div>
+    <div class="epn_text">
+        <h3>Lei Lei Wu</h3>
+        <h4>News Reporter</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Drug pricing watchdog ICER said that the uncertainty in the health benefits of two potential Alzheimer&rsquo;s drugs makes it challenging to assess their future cost-effectiveness, according to a draft report released Thursday morning.</p>
+<p>The report evaluates Biogen and Eisai&rsquo;s lecanemab and Eli Lilly&rsquo;s donanemab, both of which are amyloid-clearing antibody drugs due for FDA decisions in the coming weeks and months. The FDA&rsquo;s deadline for a decision on lecanemab&rsquo;s accelerated approval is Jan. 6, while the deadline for donanemab is estimated to be in February.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,900+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box epn_article_full">
+    <div class="epn_text">
+        <div class="epn_byline epn_underlined">
+            <div class="epn_social">
+                <span data-link="https://careers.endpts.com/jobs/177507734-site-head-houston-cell-gene-at-lonza" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://careers.endpts.com/jobs/177507734-site-head-houston-cell-gene-at-lonza&title=Site%20Head%20-%20Houston%2C%20Cell%20%26%20Gene%20at%20Lonza&source=https://endpts.com/" class="epn_byline_linkedin"></a>
+                <a href="https://twitter.com/intent/tweet?text=Site%20Head%20-%20Houston%2C%20Cell%20%26%20Gene%20at%20Lonza%20-%20https%3A%2F%2Fcareers.endpts.com%2Fjobs%2F177507734-site-head-houston-cell-gene-at-lonza" class="epn_byline_twitter"></a>
+            </div>
+            <div class="epn_section_title careers_title"><span>ENDPOINTS CAREERS</span></div>
+        </div>
+        <div class="epn_content">
+            <div class="careers_box">
+                <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/careers_logo.png');"></div>
+                <div class="epn_text">
+                    <h3><a href="https://careers.endpts.com/jobs/177507734-site-head-houston-cell-gene-at-lonza" target="_blank">Site Head - Houston, Cell & Gene</a></h3>
+                    <h4>Lonza</h4>
+                    <h4>Houston, TX, USA</h4>
+                    <div>
+                        <a href="https://careers.endpts.com/jobs/177507734-site-head-houston-cell-gene-at-lonza" class="epn_ux_button careers_but" target="_blank">view job offer</a>
+                        <a href="https://careers.endpts.com/products" rel="nofollow noopener" target="_blank" class="post_job">post your job now</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR4ekTl">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2021/09/Jean-Bennett-AP-tile-scaled.jpg">
+    <div class="epn_description"><span>Jean Bennett (Brent N. Clarke/Invision/AP Images)</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/with-focus-on-neglected-eye-diseases-opus-buys-two-gene-therapies-from-iveric-bio/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/with-focus-on-neglected-eye-diseases-opus-buys-two-gene-therapies-from-iveric-bio/&title=With%20focus%20on%20neglected%20eye%20diseases%2C%20Opus%20buys%20two%20gene%20therapies%20from%20Iveric%20Bio&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=With%20focus%20on%20neglected%20eye%20diseases%2C%20Opus%20buys%20two%20gene%20therapies%20from%20Iveric%20Bio - https://endpts.com/with-focus-on-neglected-eye-diseases-opus-buys-two-gene-therapies-from-iveric-bio/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 28, 2022 10:12 AM EST<span class="epn_time_updated">Updated 01:48 PM</span></div>
+    <div class="epn_channel channel-startups"><a href="https://endpts.com/channel/startups/" title="Channel: Startups"><span>Startups</span></a></div><div class="epn_channel channel-deals"><a href="https://endpts.com/channel/deals/" title="Channel: Deals"><span>Deals</span></a></div><div class="epn_channel channel-cell-gene-tx"><a href="https://endpts.com/channel/cell-gene-tx/" title="Channel: Cell/Gene Tx"><span>Cell/Gene Tx</span></a></div>
+</div>
+        
+        <h1>With fo&shy;cus on ne&shy;glect&shy;ed eye dis&shy;eases, Opus buys two gene ther&shy;a&shy;pies from Iver&shy;ic Bio</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/07/kyle-lahucik.jpg');"></div>
+    <div class="epn_text">
+        <h3>Kyle LaHucik</h3>
+        <h4>Associate Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>A seed-stage biotech founded by Luxturna&rsquo;s inventor has acquired two gene therapy products from a biotech that just submitted an NDA.</p>
+<p>Opus Genetics paid Iveric Bio $500,000 upfront to snag the rights to two preclinical programs for rare retinal diseases, the fledgling biotech said Wednesday. <a href="https://endpts.com/intellia-and-iveric-sell-stocks-to-raise-money-each-netting-300m/">Iveric</a>, which recently finished up an NDA filing for <a href="https://endpts.com/aao22-iveric-undeterred-by-looming-pdufa-for-competitor-touts-subgroup-data-on-ga-drug/">its geographic atrophy drug</a>, also secures somewhere between 5% and 9.9% ownership of Opus, as well as the potential for biobucks and &ldquo;low single-digit earnout&rdquo; on net sales.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,900+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR4ekfu">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/08/Richard-Murray-Jounce-tile.jpg">
+    <div class="epn_description"><span>Richard Murray, Jounce Therapeutics CEO</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/gilead-buys-out-cash-hungry-partner-jounces-antibody-for-67m/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/gilead-buys-out-cash-hungry-partner-jounces-antibody-for-67m/&title=Gilead%20buys%20out%20cash-hungry%20partner%20Jounce%27s%20antibody%20for%20%2467M&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Gilead%20buys%20out%20cash-hungry%20partner%20Jounce%27s%20antibody%20for%20%2467M - https://endpts.com/gilead-buys-out-cash-hungry-partner-jounces-antibody-for-67m/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 28, 2022 08:49 AM EST</div>
+    <div class="epn_channel channel-deals"><a href="https://endpts.com/channel/deals/" title="Channel: Deals"><span>Deals</span></a></div>
+</div>
+        
+        <h1>Gilead buys out cash-hun&shy;gry part&shy;ner Jounce's an&shy;ti&shy;body for $67M</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/11/drew-armstrong.jpg');"></div>
+    <div class="epn_text">
+        <h3>Drew Armstrong</h3>
+        <h4>Executive Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Gilead Sciences has bought out Jounce Therapeutics&rsquo; anti-CCR8 antibody for $67 million, taking over full R&amp;D and commercial rights to the experimental cancer immunotherapy drug.</p>
+<p>The deal will give Jounce enough cash to keep operating into the third quarter of 2024, said Cowen analyst Boris Peaker. But it means the Cambridge, MA-based company will forgo as much as $645 million in milestone payments, the <a href="https://www.businesswire.com/news/home/20221227005077/en/" target="_blank" rel="nofollow noopener">companies said</a>, plus royalties from any sales that the companies had agreed to when Gilead <a href="https://www.gilead.com/news-and-press/press-room/press-releases/2020/9/gilead-sciences-and-jounce-therapeutics-announce-exclusive-license-agreement-for-novel-immunotherapy-program" target="_blank" rel="nofollow noopener">licensed the drug</a> from Jounce in August 2020.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,900+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><section class="epn_regular_section epn_instream_ad epn_ad_wrapper"><div id="rakia_in_stream_3103776269" data-slot="/21729248569/rakia_instream"></div></section><article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR4fUPv">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/12/Dean-Li-Merck-tile.jpg">
+    <div class="epn_description"><span>Dean Li, Merck Research Laboratories president</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/back-again-merck-willing-to-dole-out-more-than-9b-for-keluns-adcs/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/back-again-merck-willing-to-dole-out-more-than-9b-for-keluns-adcs/&title=Back%20again%3A%20Merck%20willing%20to%20dole%20out%20more%20than%20%249B%20for%20Kelun%E2%80%99s%20ADCs&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Back%20again%3A%20Merck%20willing%20to%20dole%20out%20more%20than%20%249B%20for%20Kelun%E2%80%99s%20ADCs - https://endpts.com/back-again-merck-willing-to-dole-out-more-than-9b-for-keluns-adcs/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 22, 2022 07:42 AM EST<span class="epn_time_updated">Updated 09:22 AM</span></div>
+    <div class="epn_channel channel-deals"><a href="https://endpts.com/channel/deals/" title="Channel: Deals"><span>Deals</span></a></div><div class="epn_channel channel-china"><a href="https://endpts.com/channel/china/" title="Channel: China"><span>China</span></a></div>
+</div>
+        
+        <h1>Back again: Mer&shy;ck will&shy;ing to dole out more than $9B for Kelun’s AD&shy;Cs</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/07/kyle-lahucik.jpg');"></div>
+    <div class="epn_text">
+        <h3>Kyle LaHucik</h3>
+        <h4>Associate Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>While all has gone quiet on the M&amp;A rumor front for Seagen, one of the pioneers in antibody-drug conjugates, Merck has been racking up deal after deal for ADCs out of a Chengdu, China-based partner.</p>
+<p>In the latest of three tie-ups with Kelun-Biotech, Merck is likely entering the history books with a deal that could balloon to $9.3 billion in back-end payments &mdash; that&rsquo;s if seven ADCs make it to market. That&rsquo;s a huge if, as drug R&amp;D is notorious for an approximately 10% success rate, but the immediate boost to Kelun&rsquo;s coffers is not small: $175 million plus an intended equity investment of undisclosed size.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,900+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR4ek7l">
+    
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/tg-crosses-the-finish-line-in-ms-turning-u2-component-into-standalone-drug-for-biotechs-second-approval/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/tg-crosses-the-finish-line-in-ms-turning-u2-component-into-standalone-drug-for-biotechs-second-approval/&title=TG%20crosses%20the%20finish%20line%20in%20MS%2C%20turning%20U2%20component%20into%20standalone%20drug%20for%20biotech%27s%20second%20approval&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=TG%20crosses%20the%20finish%20line%20in%20MS%2C%20turning%20U2%20component%20into%20standalone%20drug%20for%20biotech%27s%20second%20approval - https://endpts.com/tg-crosses-the-finish-line-in-ms-turning-u2-component-into-standalone-drug-for-biotechs-second-approval/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 29, 2022 10:49 AM EST</div>
+    <div class="epn_channel channel-fda-plus"><a href="https://endpts.com/channel/fda-plus/" title="Channel: FDA+"><span>FDA+</span></a></div>
+</div>
+        
+        <h1>TG cross&shy;es the fin&shy;ish line in MS, turn&shy;ing U2 com&shy;po&shy;nent in&shy;to stand&shy;alone drug for biotech's sec&shy;ond ap&shy;proval</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/07/paul-schloesser.jpg');"></div>
+    <div class="epn_text">
+        <h3>Paul Schloesser</h3>
+        <h4>Associate Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>TG Therapeutics finally got past the FDA and got a new MS drug approved that the company plans to commercialize against giants like Roche&rsquo;s Ocrevus.</p>
+<p>The company told investors and analysts Thursday morning that the FDA signed off on the approval of ublituximab based on data from two Phase III trials. The ULTIMATE I and II trials, published earlier this year in the <em>New England Journal of Medicine</em>, demonstrated statistical superiority over teriflunomide, another MS treatment in reducing the annualized relapse rate &mdash; meeting the primary endpoint.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,900+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box epn_article_full">
+    <div class="epn_text">
+        <div class="epn_byline epn_underlined">
+            <div class="epn_social">
+                <span data-link="https://careers.endpts.com/jobs/177507851-commercial-development-director-tissue-cell-acquisition-east-coast-at-lonza" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://careers.endpts.com/jobs/177507851-commercial-development-director-tissue-cell-acquisition-east-coast-at-lonza&title=Commercial%20Development%20Director%2C%20Tissue%20%26%20Cell%20Acquisition-%20East%20Coast%20at%20Lonza&source=https://endpts.com/" class="epn_byline_linkedin"></a>
+                <a href="https://twitter.com/intent/tweet?text=Commercial%20Development%20Director%2C%20Tissue%20%26%20Cell%20Acquisition-%20East%20Coast%20at%20Lonza%20-%20https%3A%2F%2Fcareers.endpts.com%2Fjobs%2F177507851-commercial-development-director-tissue-cell-acquisition-east-coast-at-lonza" class="epn_byline_twitter"></a>
+            </div>
+            <div class="epn_section_title careers_title"><span>ENDPOINTS CAREERS</span></div>
+        </div>
+        <div class="epn_content">
+            <div class="careers_box">
+                <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/themes/endpoints-rakia/assets/images/careers_logo.png');"></div>
+                <div class="epn_text">
+                    <h3><a href="https://careers.endpts.com/jobs/177507851-commercial-development-director-tissue-cell-acquisition-east-coast-at-lonza" target="_blank">Commercial Development Director, Tissue & Cell Acquisition- East Coast</a></h3>
+                    <h4>Lonza</h4>
+                    <h4>Remote</h4>
+                    <div>
+                        <a href="https://careers.endpts.com/jobs/177507851-commercial-development-director-tissue-cell-acquisition-east-coast-at-lonza" class="epn_ux_button careers_but" target="_blank">view job offer</a>
+                        <a href="https://careers.endpts.com/products" rel="nofollow noopener" target="_blank" class="post_job">post your job now</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</article><article class="epn_regular_section epn_white_box epn_article_preview epn_article_premium" data-aid="NOR4ekPj">
+    
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/yale-spinout-xanadu-series-a-funding-news/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/yale-spinout-xanadu-series-a-funding-news/&title=Scoop%3A%20To%20fund%20Covid-19%20nasal%20vaccine%20booster%2C%20Yale%20spinout%20snags%20Series%20A&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Scoop%3A%20To%20fund%20Covid-19%20nasal%20vaccine%20booster%2C%20Yale%20spinout%20snags%20Series%20A - https://endpts.com/yale-spinout-xanadu-series-a-funding-news/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 28, 2022 10:37 PM EST</div>
+    <div class="epn_channel channel-financing"><a href="https://endpts.com/channel/financing/" title="Channel: Financing"><span>Financing</span></a></div><div class="epn_channel channel-startups"><a href="https://endpts.com/channel/startups/" title="Channel: Startups"><span>Startups</span></a></div><div class="epn_channel channel-coronavirus"><a href="https://endpts.com/channel/coronavirus/" title="Channel: Coronavirus"><span>Coronavirus</span></a></div>
+</div>
+        
+        <h1>Scoop: To fund Covid-19 nasal vac&shy;cine boost&shy;er, Yale spin&shy;out snags Se&shy;ries A</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/07/kyle-lahucik.jpg');"></div>
+    <div class="epn_text">
+        <h3>Kyle LaHucik</h3>
+        <h4>Associate Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>A biotech working to create an intranasal vaccine booster for the ongoing Covid-19 pandemic has raised a Series A, the startup&rsquo;s CEO confirmed to <em>Endpoints News</em>.</p>
+<p>Known as Xanadu Bio, the company was spun out of Yale University. The raise will bankroll non-human primate studies for an intranasal spike mRNA vaccine booster, CEO and founder Bruce Turner told Endpoints via email.</p>
+<p>A Dec. 27 <a href="https://www.sec.gov/Archives/edgar/data/1946059/000156761922022021/xslFormDX01/primary_doc.xml" target="_blank" rel="nofollow noopener">SEC filing</a> outlines a $30 million round for the Gladwyne, Pennsylvania biotech. Turner declined to discuss the funding or the names of the company&rsquo;s investors, but said the company has &ldquo;runway until late 2024.&rdquo;</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_premium_logo.svg" alt="Endpoints Premium">
+    <h3>Premium subscription required</h3>
+    <p>Unlock this article along with other benefits by subscribing to one of our paid plans. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_pw_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_pw_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+        </div>
+    </div>
+</article>
+<section class="epn_regular_section epn_instream_ad epn_ad_wrapper"><div id="rakia_in_stream_4289436492" data-slot="/21729248569/rakia_instream"></div></section><article class="epn_regular_section epn_white_box epn_article_preview" data-aid="NOR4fUDk">
+    <div class="epn_image">
+    <img loading="lazy" src="https://endpts.com/wp-content/uploads/2022/12/Daniel-de-Boer-ProQR-tile.jpg">
+    <div class="epn_description"><span>Daniel de Boer, ProQR CEO</span></div>
+</div>
+    <div class="epn_text">
+        <div class="epn_byline">
+    <div class="epn_social">
+        <span data-link="https://endpts.com/eli-lilly-ties-up-2022-by-expanding-deal-with-battered-rna-editing-biotech/" data-container="body" data-toggle="popover" data-placement="left" data-content="Copied!" class="epn_byline_share"></span>
+        
+        <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://endpts.com/eli-lilly-ties-up-2022-by-expanding-deal-with-battered-rna-editing-biotech/&title=Eli%20Lilly%20ties%20up%202022%20by%20expanding%20deal%20with%20battered%20RNA-editing%20biotech&source=https://endpts.com/" title="Share on LinkedIn" class="epn_byline_linkedin" rel="nofollow noopener" target="_blank"></a>
+        <a href="https://twitter.com/intent/tweet?text=Eli%20Lilly%20ties%20up%202022%20by%20expanding%20deal%20with%20battered%20RNA-editing%20biotech - https://endpts.com/eli-lilly-ties-up-2022-by-expanding-deal-with-battered-rna-editing-biotech/" title="Share on Twitter" class="epn_byline_twitter" rel="nofollow noopener" target="_blank"></a>
+        
+    </div>
+    
+    <div class="epn_time">December 22, 2022 07:42 AM EST<span class="epn_time_updated">Updated 08:42 AM</span></div>
+    <div class="epn_channel channel-deals"><a href="https://endpts.com/channel/deals/" title="Channel: Deals"><span>Deals</span></a></div><div class="epn_channel channel-rd"><a href="https://endpts.com/channel/rd/" title="Channel: R&amp;D"><span>R&amp;D</span></a></div>
+</div>
+        
+        <h1>Eli Lil&shy;ly ties up 2022 by ex&shy;pand&shy;ing deal with bat&shy;tered RNA-edit&shy;ing biotech</h1>
+        <div class="epn_author_box byline_author">
+    <div class="single_byline_author">
+    <div class="epn_image" style="background-image: url('https://endpts.com/wp-content/uploads/2022/07/max-gelman.jpg');"></div>
+    <div class="epn_text">
+        <h3>Max Gelman</h3>
+        <h4>Senior Editor</h4>
+    </div>
+</div>
+</div>
+        
+        <div class="epn_content">
+            
+            <p>Despite a year littered with setbacks, ProQR Therapeutics is closing 2022 on a high note.</p>
+<p>The Dutch biotech is expanding its RNA editing collaboration with Eli Lilly, with a potentially large payoff down the line, the companies <a href="https://www.globenewswire.com/news-release/2022/12/22/2578418/33039/en/Lilly-and-ProQR-to-Expand-RNA-Editing-Collaboration.html" target="_blank" rel="nofollow noopener">announced</a> early Thursday morning.</p>
+<p>Lilly is putting down $75 million in upfront cash and equity, with a $50 million option to expand the deal further in the future. There&rsquo;s also now $3.75 billion in biobucks on the table, compared with $1.25 billion when the pair signed their original deal in September 2021.</p>
+<div class="epn_limit">
+    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+    <h3>Keep reading Endpoints with a free subscription</h3>
+    <p> Unlock this story instantly and join 154,900+ biopharma pros reading Endpoints daily &mdash; and it's free. </p>
+    <div class="epn_cta">
+        <button type="button" class="epn_ux_button epn_more epn_gate_sign_up_button" data-toggle="modal" data-target="#epn_subscribe_modal">SIGN UP</button>
+        <button type="button" class="epn_ux_button epn_more epn_gate_log_in_button" data-toggle="modal" data-target="#epn_sign_in_modal">LOG IN</button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</article>
+            </div>
+            <div class="col-8 col-md-2">
+                <div class="epn_sticky_sidebar">
+                    <div class="epn_white_box epn_stream_box">
+                        <div class="epn_item epn_sidebar_active">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/us-blocks-f-stars-takeover-citing-national-security-risks/" title="Updated: US puts hold on F-star's takeover by China’s Sino Biopharm, citing national security risks" data-is-alink="NOR4ek/i">Up&shy;dat&shy;ed: US puts hold on F-star's takeover by Chi&shy;na’s Sino Bio&shy;pharm, cit&shy;ing na&shy;tion&shy;al se&shy;cu&shy;ri&shy;ty risks</a>
+    </h3>
+</div><div class="epn_item">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/sp/a-new-era-of-collaboration-promises-to-deliver-more-value-for-patients/" title="A New Era of Collaboration Promises to Deliver More Value for Patients" data-is-alink="NOR3e07h">A New Era of Col&shy;lab&shy;o&shy;ra&shy;tion Promis&shy;es to De&shy;liv&shy;er More Val&shy;ue for Pa&shy;tients</a>
+    </h3>
+</div><div class="epn_item">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/pfizer-releases-hemophilia-b-phiii-data-in-challenge-to-csls-hemgenix/" title="Pfizer releases hemophilia B PhIII data in challenge to CSL's Hemgenix" data-is-alink="NOR4ekPv">Pfiz&shy;er re&shy;leas&shy;es he&shy;mo&shy;phil&shy;ia B PhI&shy;II da&shy;ta in chal&shy;lenge to CSL's Hem&shy;genix</a>
+    </h3>
+</div><div class="epn_item">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/icer-on-alzheimers-lecanemab-should-be-priced-lower-than-aduhelm/" title="Updated: ICER on Alzheimer's: lecanemab should be priced lower than Aduhelm" data-is-alink="NOR4fU7h">Up&shy;dat&shy;ed: ICER on Alzheimer's: lecanemab should be priced low&shy;er than Aduhelm</a>
+    </h3>
+</div><div class="epn_item">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/with-focus-on-neglected-eye-diseases-opus-buys-two-gene-therapies-from-iveric-bio/" title="With focus on neglected eye diseases, Opus buys two gene therapies from Iveric Bio" data-is-alink="NOR4ekTl">With fo&shy;cus on ne&shy;glect&shy;ed eye dis&shy;eases, Opus buys two gene ther&shy;a&shy;pies from Iver&shy;ic Bio</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/gilead-buys-out-cash-hungry-partner-jounces-antibody-for-67m/" title="Gilead buys out cash-hungry partner Jounce's antibody for $67M" data-is-alink="NOR4ekfu">Gilead buys out cash-hun&shy;gry part&shy;ner Jounce's an&shy;ti&shy;body for $67M</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/back-again-merck-willing-to-dole-out-more-than-9b-for-keluns-adcs/" title="Back again: Merck willing to dole out more than $9B for Kelun’s ADCs" data-is-alink="NOR4fUPv">Back again: Mer&shy;ck will&shy;ing to dole out more than $9B for Kelun’s AD&shy;Cs</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/tg-crosses-the-finish-line-in-ms-turning-u2-component-into-standalone-drug-for-biotechs-second-approval/" title="TG crosses the finish line in MS, turning U2 component into standalone drug for biotech's second approval" data-is-alink="NOR4ek7l">TG cross&shy;es the fin&shy;ish line in MS, turn&shy;ing U2 com&shy;po&shy;nent in&shy;to stand&shy;alone drug for biotech's sec&shy;ond ap&shy;proval</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/yale-spinout-xanadu-series-a-funding-news/" title="Scoop: To fund Covid-19 nasal vaccine booster, Yale spinout snags Series A" data-is-alink="NOR4ekPj">Scoop: To fund Covid-19 nasal vac&shy;cine boost&shy;er, Yale spin&shy;out snags Se&shy;ries A</a>
+    </h3>
+</div><div class="epn_item epn_hidden">
+    <h3 class="epn_headline">
+        <a href="https://endpts.com/eli-lilly-ties-up-2022-by-expanding-deal-with-battered-rna-editing-biotech/" title="Eli Lilly ties up 2022 by expanding deal with battered RNA-editing biotech" data-is-alink="NOR4fUDk">Eli Lil&shy;ly ties up 2022 by ex&shy;pand&shy;ing deal with bat&shy;tered RNA-edit&shy;ing biotech</a>
+    </h3>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><footer class="epn_footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 col-md-2">
+                <a href="/" class="epn_logo">
+
+                    <img loading="lazy" src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn-logo-tagline-negative.svg" alt="Endpoints News">
+                </a>
+                <div class="epn_info">
+                    <p>Bioscience &amp; Technology Business Center<br>The University of Kansas<br>Lawrence, Kansas<!-- <br>2029 Becker Drive, <br>(785) 813-1733 -->
+                    </p>
+                </div>
+                <div class="epn_social">
+                    <a href="https://twitter.com/endpts" rel="nofollow noopener" target="_blank" class="epn_footer_twitter" title="Endpoints on Twitter"></a>
+                    <a href="https://www.linkedin.com/company/endpoints" rel="nofollow noopener" target="_blank" class="epn_footer_linkedin" title="Endpoints on LinkedIn"></a>
+
+                </div>
+            </div>
+
+
+            <nav class="col-8 col-md-1">
+                <h3>Latest</h3>
+                <ul>
+                    <li><a href="https://endpts.com/news/" title="Latest news">All News</a></li>
+                    <li><a href="https://endpts.com/premium/" title="Premium Content">Premium Content</a></li>
+                    <li><a href="https://endpts.com/dont-miss/" title="Don't miss stories">Don't Miss</a></li>
+                    <li><a href="https://endpts.com/channel/special/" title="Special stories">Special</a></li>
+                    <li><a href="https://endpts.com/channel/in-focus/" title="In Focus stories">In Focus</a></li>
+                    <!--<li><a href="#">Protocols</a></li>-->
+
+                </ul>
+            </nav>
+
+            <nav class="col-8 col-md-2">
+                <h3>Channels</h3>
+                <ul class="epn_menu_2_columns">
+                    <li>
+                        <a href="https://endpts.com/channel/ai/" title="See Latest Stories in AI Channel">AI</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/bioregnum/" title="See Latest Stories in Bioregnum Channel">Bioregnum</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/biotech-voices/" title="See Latest Stories in Biotech Voices Channel">Biotech Voices</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/cell-gene-tx/" title="See Latest Stories in Cell/Gene Tx Channel">Cell/Gene Tx</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/china/" title="See Latest Stories in China Channel">China</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/coronavirus/" title="See Latest Stories in Coronavirus Channel">Coronavirus</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/deals/" title="See Latest Stories in Deals Channel">Deals</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/diagnostics/" title="See Latest Stories in Diagnostics Channel">Diagnostics</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/discovery/" title="See Latest Stories in Discovery Channel">Discovery</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/fda-plus/" title="See Latest Stories in FDA+ Channel">FDA+</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/financing/" title="See Latest Stories in Financing Channel">Financing</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/law/" title="See Latest Stories in Law Channel">Law</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/letters-to-the-editor/" title="See Latest Stories in Letters to the Editor Channel">Letters to the Editor</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/manufacturing/" title="See Latest Stories in Manufacturing Channel">Manufacturing</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/marketing/" title="See Latest Stories in Marketing Channel">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/opinion/" title="See Latest Stories in Opinion Channel">Opinion</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/outsourcing/" title="See Latest Stories in Outsourcing Channel">Outsourcing</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/peer-review/" title="See Latest Stories in Peer Review Channel">Peer Review</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/people/" title="See Latest Stories in People Channel">People</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/pharma/" title="See Latest Stories in Pharma Channel">Pharma</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/rd/" title="See Latest Stories in R&amp;D Channel">R&amp;D</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/startups/" title="See Latest Stories in Startups Channel">Startups</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/channel/weekly/" title="See Latest Stories in Weekly Channel">Weekly</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="col-8 col-md-1">
+                <h3>More</h3>
+                <ul>
+                    <li>
+                        <a href="http://endpoints-news.rippling-ats.com/" rel="nofollow noopener" target="_blank" title="Work at Endpoints">Work at Endpoints</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/letter-to-editors/" target="_blank" title="Letter to Editors">Letter to Editors</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/ipo-tracker/" target="_blank" title="Endpoints News IPO Tracker">IPO Tracker</a>
+                    </li>
+                    <li>
+                        <a href="https://endpoints.studio/events/" target="_blank" title="Endpoints Events">Events</a>
+                    </li>
+                    <li><a href="https://webinars.endpts.com/" target="_blank" title="Endpoints Webinars">Webinars</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/sponsored/" title="See all Sponsored Posts">Sponsored Posts</a>
+                    </li>
+                    <li>
+                        <a href="https://endpoints.studio" target="_blank" title="Endpoints Studio">Advertise</a>
+                    </li>
+                    <li>
+                        <a href="https://store.endpts.com" target="_blank">Endpoints Merch</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/about-endpoints-news/" title="About Endpoints News">About Us</a>
+                    </li>
+                    <li>
+                        <span data-intercom-open  >Help</span>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="col-8 col-md-2">
+                <h3>Work in biotech</h3>
+                <ul>
+                    <li><a href="https://careers.endpts.com" title="Endpoints Careers">Endpoints Careers</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row epn_copyright">
+            <div class="col-8 col-md  -2">
+                <p>© Endpoints Company 2023</p>
+            </div>
+            <nav class="col-8 col-md-6">
+                <ul>
+                    <li>
+                        <span data-intercom-open  >Help</span>
+                    </li>
+
+                    <li>
+                        <a href="https://mediakit.endpts.com" target="_blank">Advertise</a>
+                    </li>
+                    <li>
+                        <a href="https://www.iubenda.com/privacy-policy/286978" rel="nofollow noopener" target="_blank">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="https://endpts.com/an-update-on-the-endpoints-business-model-and-how-your-company-can-directly-support-it/">Business Model</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</footer>
+<div class="modal epn_form epn_hidden_soft" tabindex="-1" role="dialog" id="epn_sign_in_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="epn_overlay epn_hidden_soft">
+                <div class="epn_loader_spinner epn_solid_gold epn_inside_overlay"></div>
+            </div>
+            <div class="modal-header">
+                <img src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+                <button class="epn_form_close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <fieldset class="epn_form_content">
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_golden">Log in to your account</span>
+                                </h3>
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_svg ux_envelope"></span>
+                                    <span>e-mail</span>
+                                </h3>
+                                <div class="epn_ux_input epn_no_grey_background">
+                                    <input type="email" id="epn_sign_in_modal_email" placeholder="E-mail" data-toggle="tooltip" data-placement="top">
+                                </div>
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_svg ux_https"></span>
+                                    <span>password</span>
+                                </h3>
+                                <div class="epn_ux_password ">
+                                    <button class="epn_ux_show_password">
+                                        <span class="epn_svg ux_eye"></span>
+                                        <span class="epn_svg ux_eye_not"></span>
+                                    </button>
+                                    <div class="epn_ux_input epn_no_grey_background">
+                                        <input type="password" id="epn_sign_in_modal_password" placeholder="Password" data-toggle="tooltip" data-placement="top">
+                                    </div>
+                                </div>
+                                <div class="epn_group epn_form_footer">
+                                    <div class="epn_half">
+                                        <button class="epn_form_link epn_form_opener" data-form="epn_reset_password_modal">Change my password</button>
+                                        <button class="epn_form_link epn_form_opener" data-form="epn_request_magic_link_modal">Get a magic email link</button>
+                                    </div>
+                                    <div class="epn_half epn_align_right">
+                                        <button class="epn_ux_button" id="epn_sign_in_modal_submit">LOG IN</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal epn_form epn_hidden_soft" tabindex="-1" role="dialog" id="epn_request_magic_link_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="epn_overlay epn_hidden_soft">
+                <div class="epn_loader_spinner epn_solid_gold epn_inside_overlay"></div>
+            </div>
+            <div class="modal-header">
+                <img src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+                <button class="epn_form_close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <fieldset class="epn_form_content">
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_golden">request magic link</span>
+                                </h3>
+                                <p>If you're already an Endpoints subscriber, enter your email below for a
+                                    <b>magic link that lets you log in quickly without using a password</b>. Please note the magic link is
+                                    <b>one-time use only</b> and expires after 24 hours.</p>
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_svg ux_envelope"></span>
+                                    <span>email</span>
+                                </h3>
+                                <div class="epn_ux_input epn_no_grey_background">
+                                    <input type="email" id="epn_request_magic_link_email" placeholder="E-mail" data-toggle="tooltip" data-placement="top">
+                                </div>
+                                <div class="epn_group epn_form_footer">
+                                    <div class="epn_half">
+                                        <button class="epn_ux_button epn_form_opener" data-form="epn_sign_in_modal">BACK</button>
+                                    </div>
+                                    <div class="epn_half epn_align_right">
+                                        <button class="epn_ux_button" id="epn_request_magic_link_submit">REQUEST</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal epn_form epn_hidden_soft" tabindex="-1" role="dialog" id="epn_reset_password_modal" aria-hidden ="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="epn_overlay epn_hidden_soft">
+                <div class="epn_loader_spinner epn_solid_gold epn_inside_overlay"></div>
+            </div>
+            <div class="modal-header">
+                <img src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+                <button class="epn_form_close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <fieldset class="epn_form_content">
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_golden">reset password</span>
+                                </h3>
+                                <p>We'll e-mail you a link to set a new password. Please note this link is one-time use only and is valid for only 24 hours.</p>
+                                <h3 class="epn_ux_modal_caption">
+                                    <span class="epn_svg ux_envelope"></span>
+                                    <span>email</span>
+                                </h3>
+                                <div class="epn_ux_input epn_no_grey_background">
+                                    <input type="email" id="epn_reset_password_email" placeholder="E-mail" data-toggle="tooltip" data-placement="top">
+                                </div>
+                                <div class="epn_group epn_form_footer">
+                                    <div class="epn_half">
+                                        <button class="epn_ux_button epn_form_opener" data-form="epn_sign_in_modal">BACK</button>
+                                    </div>
+                                    <div class="epn_half epn_align_right">
+                                        <button class="epn_ux_button" id="epn_reset_password_submit">RESET</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal epn_form" tabindex="-1" role="dialog" id="epn_subscribe_modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="epn_overlay epn_hidden_soft">
+            </div>
+            <div class="modal-header">
+                <img src="https://endpts.com/wp-content/themes/endpoints-rakia/assets/svg/epn_logo.svg" alt="Endpoints News">
+                <button class="epn_form_close" data-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="epn_form_content">
+                                <h3 class="epn_ux_caption">
+                                    <span>About You</span>
+                                </h3>
+                                <fieldset>
+                                    <div class="epn_ux_input">
+                                        <input type="email" id="epn_modal_subscribe_email" placeholder="E-mail" data-toggle="tooltip" data-placement="top">
+                                    </div>
+
+                                    <div class="epn_ux_input">
+                                        <input type="text" id="epn_modal_subscribe_name" placeholder="Full Name" data-toggle="tooltip" data-placement="top">
+                                    </div>
+
+                                    <div class="epn_ux_input">
+                                        <input type="text" id="epn_modal_subscribe_company" placeholder="Company" data-toggle="tooltip" data-placement="top">
+                                    </div>
+
+                                    <div class="epn_ux_input">
+                                        <input type="text" id="epn_modal_subscribe_job_title" placeholder="Job Title" data-toggle="tooltip" data-placement="top">
+                                    </div>
+                                </fieldset>
+                                <h3 class="epn_ux_caption my-3">
+                                    <span>Subscriptions</span>
+                                </h3>
+                                <fieldset>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS NEWS</span> <span class="epn_grey">Daily at 11:30 AM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_edition" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_edition"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">EARLY EDITION</span> <span class="epn_grey">Daily at 7:15 AM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_early_edition" checked="">
+                                            <label for="epn_modal_subscribe_early_edition"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS PHARMA</span> <span class="epn_grey">Daily at 2 PM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_pharma" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_pharma"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS MARKETING RX</span> <span class="epn_grey">Tue at 2 PM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_marketing_rx" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_marketing_rx"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS FDA+</span> <span class="epn_grey">Wed at 2 PM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_fda_plus" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_fda_plus"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS MANUFACTURING</span> <span class="epn_grey">Thu at 2 PM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_manufacturing" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_manufacturing"></label>
+                                        </div>
+                                    </div>
+                                    <div class="epn_ux_switch_group epn_white_box">
+                                        <p>
+                                            <span class="epn_subscribe_bold_uppercase">ENDPOINTS WEEKLY</span> <span class="epn_grey">Sat at 6 AM ET</span>
+                                        </p>
+                                        <div class="epn_ux_switch">
+                                            <input type="checkbox" id="epn_modal_subscribe_endpoints_weekly" checked="">
+                                            <label for="epn_modal_subscribe_endpoints_weekly"></label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class="epn_group mt-4">
+                                    <button class="epn_ux_button epn_has_tooltip no_tooltip_on_hover" id="epn_modal_subscribe_submit" data-toggle="tooltip" data-placement="top">INSTANT SIGN UP</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/jquery.min.js?ver=3.6.1' id='jquery-js'></script>
+<script id='rakia_script-js-extra'>
+var parselyAjaxObject = {"site":"endpts.com"};
+var EP_ajax_object = {"ajax_url":"https:\/\/endpts.com\/wp-admin\/admin-ajax.php","assets":"https:\/\/endpts.com\/wp-content\/plugins\/endpoints\/assets\/","products":["endpoints_edition","early_edition","endpoints_weekly","endpoints_manufacturing","endpoints_fda_plus","endpoints_marketing_rx","endpoints_pharma"],"fallback_spinner":"https:\/\/endpts.com\/wp-content\/plugins\/endpoints\/assets\/images\/loading.gif","comment_source":"388594","intercom":"1","user_type":"Guest"};
+var isa = {"or":"1672716758","tp":"sa","ajax_url":"https:\/\/endpts.com\/wp-admin\/admin-ajax.php","ga_targeting":{"generic":{"faid":"NOR4ek\/i"}},"hashes":["NOR4ek\/i","NOR3e07h","NOR4ekPv","NOR4fU7h","NOR4ekTl","NOR4ekfu","NOR4fUPv","NOR4ek7l","NOR4ekPj","NOR4fUDk"],"ca":"NOR4ek\/i","lj":"NOR3fELh","ads":["rakia_in_stream_3940492655","rakia_in_stream_3103776269","rakia_in_stream_4289436492"]};
+</script>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/script.min.js?ver=1610241983' id='rakia_script-js'></script>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/infinite_scroll.min.js?ver=1610241983' id='infinite_rakia-js'></script>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/ca_animator.min.js?ver=1610241983' id='ca_animator-js'></script>
+<script src='https://endpts.com/wp-content/themes/endpoints-rakia/assets/js/bootstrap.bundle.min.js?ver=4.6.2' id='bootstrap_js-js'></script>
+<script src='https://cdn.parsely.com/keys/endpts.com/p.js' id='parsely-cfg-js'></script>
+<script id='dfp-js-extra'>
+var ad_units_data = {"\/21729248569\/rakia_banner_above_articles":{"div":"rakia_above_articles","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_above_tiles_homepage":{"div":"rakia_above_tiles","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_ipo_tracker_billboard":{"div":"rakia_ipo_tracker_billboard","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_ipo_tracker_instream":{"div":"rakia_ipo_tracker_instream","sizes":[[970,250],[340,120],[340,150],[340,200],[340,230],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_below_tiles_homepage":{"div":"rakia_below_tiles","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_within_article":{"div":"rakia_within_article","sizes":[[340,150],[340,200],[340,230],[340,250],[440,150],[440,190],[440,200],[760,150],[760,200],[760,250]]},"\/21729248569\/rakia_instream":{"div":"rakia_in_stream","sizes":[[340,150],[340,200],[340,230],[340,250],[520,150],[520,200],[520,220],[890,150],[890,200],[890,250]]},"\/21729248569\/rakia_sponsored_front_page":{"div":"rakia_sponsored_front_page","sizes":[[340,570],[340,595],[592,305]]},"\/21729248569\/rakia_banner_above_tiles_channels":{"div":"rakia_above_tiles_channel","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_banner_below_tiles_channels":{"div":"rakia_below_tiles_channel","sizes":[[970,250],[340,120],[340,150],[340,200],[720,120],[720,150],[720,200],[1200,150],[1200,200],[1200,250]]},"\/21729248569\/rakia_inarticle_adx":{"div":"rakia_within_article_adx","sizes":[[300,100],[300,250],[320,100],[336,280],[468,60],[728,90]]},"\/21729248569\/rakia_instream_adx":{"div":"rakia_in_stream_adx","sizes":[[300,100],[300,250],[320,100],[336,280],[468,60],[728,90]]},"isadx":"<section class=\"epn_regular_section epn_instream_ad epn_ad_wrapper\"><div id=\"ridis\" data-slot=\"\/21729248569\/rakia_instream_adx\"><\/div><\/section>","iaadx":"<div class=\"epn_ad_wrapper\"><div class=\"epn_article_ad\" id=\"ridia\" data-slot=\"\/21729248569\/rakia_inarticle_adx\"><\/div><\/div>"};
+</script>
+<script src='https://www.googletagservices.com/tag/js/gpt.js' id='dfp-js'></script>
+<script src='https://endpts.com/wp-content/plugins/endpoints/assets/js/endpoints.min.js?ver=1403438354' id='ep_script-js'></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-0a161597335a680ce50","applicationID":"717633112","transactionName":"YlVSMUZUCxVQV0NcWVsfcQZAXAoIHkdeW1FZVR0VW0YR","queueTime":0,"applicationTime":409,"atts":"ThJRRw5OGBs=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
